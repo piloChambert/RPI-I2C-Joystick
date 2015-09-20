@@ -1,2 +1,2 @@
 # RPI-I2C-Joystick
-Arduino based joystick for Raspberry Pi 
+I2C Arduino based joystick for Raspberry Pi 
