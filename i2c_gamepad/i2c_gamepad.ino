@@ -2,6 +2,9 @@
 
 #define I2C_ADDRESS 0x18
 
+#define START_BUTTON (1 << 0)
+
+
 typedef struct {
   uint16_t buttons; // button status
 } I2CGamepadStatus;
