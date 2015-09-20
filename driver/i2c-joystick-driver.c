@@ -11,14 +11,19 @@
 #include <unistd.h>
 #include <stdint.h>
 
+#include <linux/input.h>
+#include <linux/uinput.h>
+
 #define SLAVE_ADDRESS 0x18
 #define UPDATE_FREQ 5000 // ms (200Hz)
 
 typedef struct {
   uint16_t buttons; // button status
-} I2CGamepadStatus;
+  uint16_t axis0; // first axis
+  uint16_t axis1; // second axis
+} I2CJoystickStatus;
 
-int main(int argc, char *argv[]) {
+int openI2C() {
   // open I2C device  
   int file;
   char *filename = "/dev/i2c-1";
@@ -34,21 +39,149 @@ int main(int argc, char *argv[]) {
     exit(1);
   }
 
-  // read I2C
+  return file;
+}
+
+int readI2CJoystick(int file, I2CJoystickStatus *status) {
   int s = 0;
-  I2CGamepadStatus status;
+  
+  s = read(file, status, sizeof(I2CJoystickStatus));
+
+  if(s != sizeof(I2CJoystickStatus))
+    return -1; // error
+
+  return 0; // no error
+}
+
+int createUInputDevice() {
+  int fd;
+
+  fd = open("/dev/uinput", O_WRONLY | O_NDELAY);
+  if(fd < 0) {
+    fprintf(stderr, "Can't open uinput device!\n");
+    exit(1);
+  }
+  
+    // device structure
+  struct uinput_user_dev uidev;
+  memset(&uidev, 0, sizeof(uidev));
+
+  // init event  
+  int ret = 0;
+  ret |= ioctl(fd, UI_SET_EVBIT, EV_KEY);
+  ret |= ioctl(fd, UI_SET_EVBIT, EV_REL);
+
+  // bouton
+  ret |= ioctl(fd, UI_SET_KEYBIT, BTN_A);
+  ret |= ioctl(fd, UI_SET_KEYBIT, BTN_B);
+  ret |= ioctl(fd, UI_SET_KEYBIT, BTN_X);
+  ret |= ioctl(fd, UI_SET_KEYBIT, BTN_Y);
+  ret |= ioctl(fd, UI_SET_KEYBIT, BTN_TL);
+  ret |= ioctl(fd, UI_SET_KEYBIT, BTN_TR);
+  ret |= ioctl(fd, UI_SET_KEYBIT, BTN_SELECT);
+  ret |= ioctl(fd, UI_SET_KEYBIT, BTN_START);
+  
+  // axis
+  ret |= ioctl(fd, UI_SET_EVBIT, EV_ABS);
+  ret |= ioctl(fd, UI_SET_ABSBIT, ABS_X);
+  uidev.absmin[ABS_X] = -512;
+  uidev.absmax[ABS_X] = 511;
+  
+  ret |= ioctl(fd, UI_SET_ABSBIT, ABS_Y);
+  uidev.absmin[ABS_Y] = -512;
+  uidev.absmax[ABS_Y] = 511;
+
+  ret |= ioctl(fd, UI_SET_ABSBIT, ABS_HAT0X);
+  uidev.absmin[ABS_HAT0X] = -1;
+  uidev.absmax[ABS_HAT0X] = 1;
+
+  ret |= ioctl(fd, UI_SET_ABSBIT, ABS_HAT0Y);
+  uidev.absmin[ABS_HAT0Y] = -1;
+  uidev.absmax[ABS_HAT0Y] = 1;
+  
+  if(ret) {
+    fprintf(stderr, "Error while configuring uinput device!\n");
+    exit(1);
+  }
+
+  snprintf(uidev.name, UINPUT_MAX_NAME_SIZE, "I2C Arduino Joystick");
+  uidev.id.bustype = BUS_USB;
+  uidev.id.vendor  = 1;
+  uidev.id.product = 1;
+  uidev.id.version = 1;
+
+  ret = write(fd, &uidev, sizeof(uidev));
+  if(ioctl(fd, UI_DEV_CREATE)) {
+    fprintf(stderr, "Error while creating uinput device!\n");
+    exit(1);    
+  }
+
+  return fd;
+}
+
+void sendButtonEvent(int fd, uint16_t type, uint16_t code, int32_t value) {
+  struct input_event ev;
+
+  memset(&ev, 0, sizeof(ev));
+
+  ev.type = type;
+  ev.code = code;
+  ev.value = value;
+  
+  if(write(fd, &ev, sizeof(ev)) < 0) {
+    fprintf(stderr, "Error while sending event to uinput device!\n");
+  }
+
+  // need to send a sync event
+  ev.type = EV_SYN;
+  ev.code = SYN_REPORT;
+  ev.value = 0;
+  write(fd, &ev, sizeof(ev));
+  if (write(fd, &ev, sizeof(ev)) < 0) {
+    fprintf(stderr, "Error while sending event to uinput device!\n");
+  }
+}
+
+int main(int argc, char *argv[]) {
+  // open I2C device  
+  int I2CFile = openI2C();
+
+  // current joystick status
+  I2CJoystickStatus status;
+  status.buttons = 0;
+  status.axis0 = 127;
+  status.axis1 = 127;
+
+  // create uinput device
+  int UInputFIle = createUInputDevice();
+
+  printf("Driver ready\n");
 
   while(1) {
-    // read gamepad status
-    if((s = read(file, &status, sizeof(I2CGamepadStatus))) == sizeof(I2CGamepadStatus)) {
-      printf("%d\n", status.buttons);
+    // read new status from I2C
+    I2CJoystickStatus newStatus;
+    if(readI2CJoystick(I2CFile, &newStatus) != 0) {
+      printf("can't read I2C device!\n");
     } else {
-      printf("can't read : %d\n", s);
+      // everything is ok
+      if(status.buttons != newStatus.buttons
+	 || status.axis0 != status.axis0
+	 || status.axis1 != status.axis1) {
+	//printf("%d %d %d\n", newStatus.buttons, newStatus.axis0, newStatus.axis1);
+      }
+
+      if((status.buttons & 1) != (newStatus.buttons & 1)) {
+	sendButtonEvent(UInputFIle, EV_KEY, BTN_A, (newStatus.buttons & 1) == 0 ? 0 : 1);
+      }
+
+      status = newStatus;
     }
 
+    // sleep until next update
     usleep(UPDATE_FREQ);
   }
 
   // close file
-  close(file);
+  close(I2CFile);
+  ioctl(UInputFIle, UI_DEV_DESTROY);
 }
