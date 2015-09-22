@@ -23,6 +23,17 @@ typedef struct {
   uint16_t axis1; // second axis
 } I2CJoystickStatus;
 
+uint16_t switchCode[] = {
+  BTN_A,
+  BTN_B,
+  BTN_X,
+  BTN_Y,
+  BTN_TL, 
+  BTN_TR,
+  BTN_SELECT,
+  BTN_START
+};
+
 int openI2C() {
   // open I2C device  
   int file;
@@ -142,6 +153,8 @@ void sendButtonEvent(int fd, uint16_t type, uint16_t code, int32_t value) {
   }
 }
 
+#define TestBitAndSendKeyEvent(oldValue, newValue, bit, event) if((oldValue & (1 << bit)) != (newValue & (1 << bit))) sendButtonEvent(UInputFIle, EV_KEY, event, (newValue & (1 << bit)) == 0 ? 0 : 1);
+
 int main(int argc, char *argv[]) {
   // open I2C device  
   int I2CFile = openI2C();
@@ -164,15 +177,16 @@ int main(int argc, char *argv[]) {
       printf("can't read I2C device!\n");
     } else {
       // everything is ok
-      if(status.buttons != newStatus.buttons
-	 || status.axis0 != status.axis0
-	 || status.axis1 != status.axis1) {
-	//printf("%d %d %d\n", newStatus.buttons, newStatus.axis0, newStatus.axis1);
-      }
 
-      if((status.buttons & 1) != (newStatus.buttons & 1)) {
-	sendButtonEvent(UInputFIle, EV_KEY, BTN_A, (newStatus.buttons & 1) == 0 ? 0 : 1);
-      }
+      // update button event
+      TestBitAndSendKeyEvent(status.buttons, newStatus.buttons, 0, BTN_A);
+      TestBitAndSendKeyEvent(status.buttons, newStatus.buttons, 1, BTN_B);
+      TestBitAndSendKeyEvent(status.buttons, newStatus.buttons, 2, BTN_X);
+      TestBitAndSendKeyEvent(status.buttons, newStatus.buttons, 3, BTN_Y);
+      TestBitAndSendKeyEvent(status.buttons, newStatus.buttons, 4, BTN_TL);
+      TestBitAndSendKeyEvent(status.buttons, newStatus.buttons, 5, BTN_TR);
+      TestBitAndSendKeyEvent(status.buttons, newStatus.buttons, 6, BTN_START);
+      TestBitAndSendKeyEvent(status.buttons, newStatus.buttons, 7, BTN_SELECT);
 
       status = newStatus;
     }
