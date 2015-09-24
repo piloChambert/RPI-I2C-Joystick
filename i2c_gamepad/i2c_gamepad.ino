@@ -18,8 +18,8 @@
 
 typedef struct {
   uint16_t buttons; // button status
-  uint16_t axis0; // first axis
-  uint16_t axis1; // second axis
+  uint8_t axis0; // first axis
+  uint8_t axis1; // second axis
 } I2CJoystickStatus;
 
 I2CJoystickStatus joystickStatus;
@@ -75,6 +75,7 @@ void scanInput() {
 
     // if state has changed
     if(newState != switches[i].state && millis() - switches[i].time > SWITCH_DEBOUNCE_TIME) {
+      // debug
       /*
       Serial.print("switch ");
       Serial.print(i);
@@ -106,9 +107,28 @@ void scanInput() {
   }
 }
 
+void scanAnalog() {
+  int x = analogRead(0);
+  int y = analogRead(1);
+
+  x = min(max(((x - 240) / 10), 0) << 2, 255);
+  y = min(max(((y - 200) / 10), 0) << 2, 255);
+
+  joystickStatus.axis0 = x;
+  joystickStatus.axis1 = y;
+
+  // debug
+/*
+  Serial.print(x);
+  Serial.print(" - ");
+  Serial.println(y);
+  delay(200);
+  */
+}
+
 void loop() {
   scanInput();
-  
+  scanAnalog();
 /*
   if(reading == HIGH) {
     status.buttons &= ~0x01;

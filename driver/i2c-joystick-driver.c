@@ -19,8 +19,8 @@
 
 typedef struct {
   uint16_t buttons; // button status
-  uint16_t axis0; // first axis
-  uint16_t axis1; // second axis
+  uint8_t axis0; // first axis
+  uint8_t axis1; // second axis
 } I2CJoystickStatus;
 
 uint16_t switchCode[] = {
@@ -130,7 +130,7 @@ int createUInputDevice() {
   return fd;
 }
 
-void sendButtonEvent(int fd, uint16_t type, uint16_t code, int32_t value) {
+void sendInputEvent(int fd, uint16_t type, uint16_t code, int32_t value) {
   struct input_event ev;
 
   memset(&ev, 0, sizeof(ev));
@@ -153,7 +153,7 @@ void sendButtonEvent(int fd, uint16_t type, uint16_t code, int32_t value) {
   }
 }
 
-#define TestBitAndSendKeyEvent(oldValue, newValue, bit, event) if((oldValue & (1 << bit)) != (newValue & (1 << bit))) sendButtonEvent(UInputFIle, EV_KEY, event, (newValue & (1 << bit)) == 0 ? 0 : 1);
+#define TestBitAndSendKeyEvent(oldValue, newValue, bit, event) if((oldValue & (1 << bit)) != (newValue & (1 << bit))) sendInputEvent(UInputFIle, EV_KEY, event, (newValue & (1 << bit)) == 0 ? 0 : 1);
 
 int main(int argc, char *argv[]) {
   // open I2C device  
@@ -187,6 +187,20 @@ int main(int argc, char *argv[]) {
       TestBitAndSendKeyEvent(status.buttons, newStatus.buttons, 5, BTN_TR);
       TestBitAndSendKeyEvent(status.buttons, newStatus.buttons, 6, BTN_START);
       TestBitAndSendKeyEvent(status.buttons, newStatus.buttons, 7, BTN_SELECT);
+
+      if(newStatus.axis0 != status.axis0) {
+	// send event
+	int val = newStatus.axis0;
+	val = (val - 128) * 4;
+	sendInputEvent(UInputFIle, EV_ABS, ABS_X, val);
+      }
+
+      if(newStatus.axis1 != status.axis1) {
+	// send event
+	int val = newStatus.axis1;
+	val = (val - 128) * 4;
+	sendInputEvent(UInputFIle, EV_ABS, ABS_Y, val);
+      }
 
       status = newStatus;
     }
