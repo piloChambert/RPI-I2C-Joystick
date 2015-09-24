@@ -35,10 +35,10 @@ typedef struct {
 
 // the 12 switches matrix
 InputSwitch switches[] = {
-  {5, HIGH, 0, BTN_A},
-  {6, HIGH, 0, BTN_B},
-  {7, HIGH, 0, BTN_X},
-  {8, HIGH, 0, BTN_Y},
+  {20, HIGH, 0, BTN_A},
+  {21, HIGH, 0, BTN_B},
+  {5, HIGH, 0, BTN_X},
+  {6, HIGH, 0, BTN_Y},
   {9, HIGH, 0, BTN_LT},
   {10, HIGH, 0, BTN_RT},
   {11, HIGH, 0, BTN_START},
@@ -76,22 +76,22 @@ void scanInput() {
     // if state has changed
     if(newState != switches[i].state && millis() - switches[i].time > SWITCH_DEBOUNCE_TIME) {
       // debug
-      /*
+      
       Serial.print("switch ");
       Serial.print(i);
       Serial.print("(");
       Serial.print(switches[i].code);
       Serial.print("): ");
-      */
+      
 
       if(newState == HIGH) {
         // button released
         joystickStatus.buttons &= ~(1 << switches[i].code);
-        //Serial.println("HIGH");
+        Serial.println("HIGH");
       } else {
         // button pressed
         joystickStatus.buttons |= (1 << switches[i].code);
-        //Serial.println("LOW");
+        Serial.println("LOW");
       }
     
       switches[i].state = newState;
