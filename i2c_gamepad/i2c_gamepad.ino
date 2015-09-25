@@ -1,7 +1,6 @@
 #include <Wire.h>
 
-#define I2C_ADDRESS 0x18
-
+// switch type definition
 #define BTN_A           0x00
 #define BTN_B           0x01
 #define BTN_X           0x02
@@ -15,7 +14,14 @@
 #define BTN_LEFT        0x0A
 #define BTN_RIGHT       0x0B
 
+typedef struct {
+  unsigned char pin;
+  unsigned char state;
+  unsigned long time;
+  unsigned char code;
+} InputSwitch;
 
+// I2C data definition
 typedef struct {
   uint16_t buttons; // button status
   uint8_t axis0; // first axis
@@ -24,16 +30,19 @@ typedef struct {
 
 I2CJoystickStatus joystickStatus;
 
+
+// ------------------------------------------
+// Configuration
+// ------------------------------------------
+
+#define I2C_ADDRESS 0x18
 #define SWITCH_DEBOUNCE_TIME 50 // ms
+#define ANALOG_PIN_X 0
+#define ANALOG_PIN_Y 1
+#define HAT_PIN_X 2
+#define HAT_PIN_Y 3
 
-typedef struct {
-  unsigned char pin;
-  unsigned char state;
-  unsigned long time;
-  unsigned char code;
-} InputSwitch;
-
-// the 12 switches matrix
+// the 8 switches 
 InputSwitch switches[] = {
   {20, HIGH, 0, BTN_A},
   {21, HIGH, 0, BTN_B},
@@ -76,22 +85,22 @@ void scanInput() {
     // if state has changed
     if(newState != switches[i].state && millis() - switches[i].time > SWITCH_DEBOUNCE_TIME) {
       // debug
-      
+      /*
       Serial.print("switch ");
       Serial.print(i);
       Serial.print("(");
       Serial.print(switches[i].code);
       Serial.print("): ");
-      
+      */
 
       if(newState == HIGH) {
         // button released
         joystickStatus.buttons &= ~(1 << switches[i].code);
-        Serial.println("HIGH");
+        //Serial.println("HIGH");
       } else {
         // button pressed
         joystickStatus.buttons |= (1 << switches[i].code);
-        Serial.println("LOW");
+        //Serial.println("LOW");
       }
     
       switches[i].state = newState;
@@ -108,22 +117,24 @@ void scanInput() {
 }
 
 void scanAnalog() {
-  int x = analogRead(0);
-  int y = analogRead(1);
+  // read analog stick values
+  int x = analogRead(ANALOG_PIN_X);
+  int y = analogRead(ANALOG_PIN_);Y
 
+  // translate into a valid range
   x = min(max(((x - 240) / 10), 0) << 2, 255);
   y = min(max(((y - 200) / 10), 0) << 2, 255);
 
+  // store them in the I2C data
   joystickStatus.axis0 = x;
   joystickStatus.axis1 = y;
 
-  // debug
-/*
-  Serial.print(x);
-  Serial.print(" - ");
-  Serial.println(y);
-  delay(200);
-  */
+  // read hat values
+  int hatx = analogRead(HAT_PIN_X);
+  int haty = analogRead(HAT_PIN_X);
+
+  
+
 }
 
 void loop() {
