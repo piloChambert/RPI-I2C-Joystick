@@ -119,7 +119,7 @@ void scanInput() {
 void scanAnalog() {
   // read analog stick values
   int x = analogRead(ANALOG_PIN_X);
-  int y = analogRead(ANALOG_PIN_);Y
+  int y = analogRead(ANALOG_PIN_Y);
 
   // translate into a valid range
   x = min(max(((x - 240) / 10), 0) << 2, 255);
@@ -133,7 +133,7 @@ void scanAnalog() {
   int hatx = analogRead(HAT_PIN_X);
   int haty = analogRead(HAT_PIN_X);
 
-  
+
 
 }
 
