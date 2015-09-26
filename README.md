@@ -5,6 +5,8 @@ I2C Arduino based joystick for Raspberry Pi in order to be used with [RetroPie](
 Aruino
 ---------------
 
+![](https://github.com/piloChambert/RPI-I2C-Joystick/blob/master/arduino_RPi_Joystick.png)
+
 The arduino (an ATMega328 running with its internal 8Mhz clock) is used to control the Raspberry Pi. It's used to read joystick buttons and analog axis. 
 
 The [arduino_hardware](https://github.com/piloChambert/RPI-I2C-Joystick/tree/master/arduino_hardware) directory contains the definition for the ATMega328 without quartz configuration (and PINB6 and PINB7 enable).
