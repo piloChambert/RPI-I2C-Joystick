@@ -1,4 +1,5 @@
 #include <Wire.h>
+#include <avr/sleep.h>
 
 // switch type definition
 #define BTN_A           0x00
@@ -54,6 +55,39 @@ InputSwitch switches[] = {
   {12, HIGH, 0, BTN_SELECT}
 };
 
+#define POWER_LED_PIN 13
+#define POWER_SWITCH_PIN 2
+
+void pinInterrupt(void) {
+  detachInterrupt(0);
+}
+
+unsigned long wakeUpTime = 0;
+
+void sleepNow() {
+  // Set sleep enable (SE) bit:
+  sleep_enable();
+  
+  attachInterrupt(0, pinInterrupt, LOW);
+  
+  // Choose our preferred sleep mode:
+  set_sleep_mode(SLEEP_MODE_PWR_DOWN);
+
+  // turn led off
+  digitalWrite(POWER_LED_PIN, LOW);
+ 
+  // Put the device to sleep:
+  sleep_mode();
+ 
+  // Upon waking up, sketch continues from this point.
+  sleep_disable();
+
+  // turn led on
+  digitalWrite(POWER_LED_PIN, HIGH);
+  wakeUpTime = millis();
+  Serial.println("Awake!!");
+}
+
 void setup()
 {
   Wire.begin(I2C_ADDRESS);      // join i2c bus 
@@ -75,6 +109,11 @@ void setup()
   for(int i = 0; i < sizeof(switches) / sizeof(InputSwitch); i++) {
     pinMode(switches[i].pin, INPUT_PULLUP);
   }
+
+  pinMode(POWER_LED_PIN, OUTPUT);
+  digitalWrite(POWER_LED_PIN, HIGH);
+
+  pinMode(POWER_SWITCH_PIN, INPUT_PULLUP);
 }
 
 void scanInput() {
@@ -132,20 +171,16 @@ void scanAnalog() {
   // read hat values
   int hatx = analogRead(HAT_PIN_X);
   int haty = analogRead(HAT_PIN_X);
-
-
-
 }
 
 void loop() {
   scanInput();
   scanAnalog();
-/*
-  if(reading == HIGH) {
-    status.buttons &= ~0x01;
-  } else {
-    status.buttons |= 0x01;
-  }*/  
+  
+  if(millis() - wakeUpTime > 5000) {
+    Serial.println("Go to sleep");
+    sleepNow();
+  }
 }
 
 // function that executes whenever data is requested by master
