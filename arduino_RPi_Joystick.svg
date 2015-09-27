@@ -44,10 +44,10 @@
      id="namedview5036"
      showgrid="true"
      inkscape:snap-bbox="true"
-     inkscape:snap-bbox-midpoints="false"
-     inkscape:zoom="1.2088235"
-     inkscape:cx="454.92371"
-     inkscape:cy="594.96725"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:zoom="1.7095346"
+     inkscape:cx="434.8548"
+     inkscape:cy="565.75999"
      inkscape:window-x="-2"
      inkscape:window-y="-3"
      inkscape:window-maximized="1"
@@ -67,7 +67,10 @@
      d="m 378,294 -106,0"
      id="path6381"
      inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cc" />
+     sodipodi:nodetypes="cc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      sodipodi:type="arc"
      style="fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.56492198;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
@@ -77,13 +80,19 @@
      sodipodi:rx="5"
      sodipodi:ry="6"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
-     transform="matrix(0.7,0,0,0.58333303,94.499997,-31.49983)" />
+     transform="matrix(0.7,0,0,0.58333303,94.499997,-31.49983)"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      sodipodi:nodetypes="cc"
      inkscape:connector-curvature="0"
      id="path6377"
      d="m 378,270 -106,0"
-     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      transform="matrix(0.7,0,0,0.58333303,94.499997,-55.49983)"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
@@ -93,13 +102,19 @@
      sodipodi:cx="405"
      id="path6379"
      style="fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.56492198;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-     sodipodi:type="arc" />
+     sodipodi:type="arc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      d="m 378,246 -106,0"
      id="path6375"
      inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cc" />
+     sodipodi:nodetypes="cc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#333333;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
      id="rect5044"
@@ -107,203 +122,290 @@
      height="355"
      x="396.50003"
      y="224.5"
-     ry="4.1279068" />
+     ry="4.1279068"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816"
      width="12"
      height="12"
      x="384"
-     y="240" />
+     y="240"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816-6"
      width="12"
      height="12"
      x="384"
-     y="264" />
+     y="264"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816-6-8"
      width="12"
      height="12"
      x="384"
-     y="288" />
+     y="288"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816-0"
      width="12"
      height="12"
      x="384"
-     y="312" />
+     y="312"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816-6-7"
      width="12"
      height="12"
      x="384"
-     y="336" />
+     y="336"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816-6-8-0"
      width="12"
      height="12"
      x="384"
-     y="360" />
+     y="360"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816-1"
      width="12"
      height="12"
      x="384"
-     y="384" />
+     y="384"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816-6-9"
      width="12"
      height="12"
      x="384"
-     y="408" />
+     y="408"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816-6-8-2"
      width="12"
      height="12"
      x="384"
-     y="432" />
+     y="432"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816-0-1"
      width="12"
      height="12"
      x="384"
-     y="456" />
+     y="456"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816-6-7-6"
      width="12"
      height="12"
      x="384"
-     y="480" />
+     y="480"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816-6-8-0-2"
      width="12"
      height="12"
      x="384"
-     y="504" />
+     y="504"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816-6-7-6-6"
      width="12"
      height="12"
      x="384"
-     y="528" />
+     y="528"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816-6-8-0-2-9"
      width="12"
      height="12"
      x="384"
-     y="552" />
+     y="552"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816-2"
      width="12"
      height="12"
      x="508"
-     y="240" />
+     y="240"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816-6-73"
      width="12"
      height="12"
      x="508"
-     y="264" />
+     y="264"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816-6-8-1"
      width="12"
      height="12"
      x="508"
-     y="288" />
+     y="288"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816-0-6"
      width="12"
      height="12"
      x="508"
-     y="312" />
+     y="312"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816-6-7-4"
      width="12"
      height="12"
      x="508"
-     y="336" />
+     y="336"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816-6-8-0-23"
      width="12"
      height="12"
      x="508"
-     y="360" />
+     y="360"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816-1-0"
      width="12"
      height="12"
      x="508"
-     y="384" />
+     y="384"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816-6-9-9"
      width="12"
      height="12"
      x="508"
-     y="408" />
+     y="408"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816-6-8-2-2"
      width="12"
      height="12"
      x="508"
-     y="432" />
+     y="432"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816-0-1-7"
      width="12"
      height="12"
      x="508"
-     y="456" />
+     y="456"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816-6-7-6-5"
      width="12"
      height="12"
      x="508"
-     y="480" />
+     y="480"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816-6-8-0-2-8"
      width="12"
      height="12"
      x="508"
-     y="504" />
+     y="504"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816-6-7-6-6-7"
      width="12"
      height="12"
      x="508"
-     y="528" />
+     y="528"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect5816-6-8-0-2-9-6"
      width="12"
      height="12"
      x="508"
-     y="552" />
+     y="552"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      xml:space="preserve"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:#000000;font-family:Sans;-inkscape-font-specification:Sans"
@@ -311,7 +413,10 @@
      y="460.73633"
      id="text5989"
      sodipodi:linespacing="125%"
-     transform="matrix(0,-1,1,0,0,0)"><tspan
+     transform="matrix(0,-1,1,0,0,0)"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan5991"
        x="-492.15625"
@@ -323,7 +428,10 @@
      x="402.08203"
      y="251.83203"
      id="text6012"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6014"
        x="402.08203"
@@ -335,7 +443,10 @@
      x="402.62109"
      y="275.83203"
      id="text6012-8"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6014-8"
        x="402.62109"
@@ -347,7 +458,10 @@
      x="402.81641"
      y="299.82422"
      id="text6012-8-9"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6014-8-7"
        x="402.81641"
@@ -359,7 +473,10 @@
      x="403.16797"
      y="323.83203"
      id="text6012-8-9-6"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6014-8-7-2"
        x="403.16797"
@@ -371,7 +488,10 @@
      x="402.65234"
      y="347.71875"
      id="text6012-8-9-6-6"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6014-8-7-2-9"
        x="402.65234"
@@ -383,7 +503,10 @@
      x="402.89453"
      y="371.77344"
      id="text6012-8-9-6-6-4"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6014-8-7-2-9-5"
        x="402.89453"
@@ -395,7 +518,10 @@
      x="402.81641"
      y="395.83203"
      id="text6012-8-9-6-6-4-7"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6014-8-7-2-9-5-0"
        x="402.81641"
@@ -407,7 +533,10 @@
      x="402.91016"
      y="419.82422"
      id="text6012-8-9-6-6-4-7-9"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        x="402.91016"
        y="419.82422"
@@ -419,7 +548,10 @@
      x="403.05859"
      y="443.81641"
      id="text6012-8-9-6-6-4-7-5"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6014-8-7-2-9-5-0-4"
        x="403.05859"
@@ -431,7 +563,10 @@
      x="402.08203"
      y="467.82422"
      id="text6012-8-9-6-6-4-7-96"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6014-8-7-2-9-5-0-34"
        x="402.08203"
@@ -443,7 +578,10 @@
      x="402.08203"
      y="491.83203"
      id="text6012-8-9-6-6-4-7-4"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6014-8-7-2-9-5-0-9"
        x="402.08203"
@@ -455,7 +593,10 @@
      x="402.08203"
      y="515.9375"
      id="text6012-8-9-6-6-4-7-2"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6014-8-7-2-9-5-0-98"
        x="402.08203"
@@ -467,7 +608,10 @@
      x="402.08203"
      y="539.82422"
      id="text6012-8-9-6-6-4-7-2-9"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6014-8-7-2-9-5-0-98-4"
        x="402.08203"
@@ -479,7 +623,10 @@
      x="402.08203"
      y="563.83203"
      id="text6012-8-9-6-6-4-7-2-4"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6014-8-7-2-9-5-0-98-9"
        x="402.08203"
@@ -491,7 +638,10 @@
      x="478.73438"
      y="251.82422"
      id="text6012-0"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6014-3"
        x="478.73438"
@@ -503,7 +653,10 @@
      x="479.01562"
      y="275.82422"
      id="text6012-8-7"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6014-8-6"
        x="479.01562"
@@ -515,7 +668,10 @@
      x="478.60156"
      y="299.81641"
      id="text6012-8-9-7"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6014-8-7-5"
        x="478.60156"
@@ -527,7 +683,10 @@
      x="478.85938"
      y="323.82422"
      id="text6012-8-9-6-1"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6014-8-7-2-8"
        x="478.85938"
@@ -539,7 +698,10 @@
      x="478.47656"
      y="347.71094"
      id="text6012-8-9-6-6-5"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6014-8-7-2-9-9"
        x="478.47656"
@@ -551,7 +713,10 @@
      x="479.01562"
      y="371.76562"
      id="text6012-8-9-6-6-4-6"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6014-8-7-2-9-5-6"
        x="479.01562"
@@ -563,7 +728,10 @@
      x="479.13281"
      y="395.82422"
      id="text6012-8-9-6-6-4-7-3"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6014-8-7-2-9-5-0-3"
        x="479.13281"
@@ -575,7 +743,10 @@
      x="478.84375"
      y="419.81641"
      id="text6012-8-9-6-6-4-7-9-5"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        x="478.84375"
        y="419.81641"
@@ -587,7 +758,10 @@
      x="478.50781"
      y="443.80859"
      id="text6012-8-9-6-6-4-7-5-8"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6014-8-7-2-9-5-0-4-7"
        x="478.50781"
@@ -599,7 +773,10 @@
      x="478.76562"
      y="467.81641"
      id="text6012-8-9-6-6-4-7-96-5"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6014-8-7-2-9-5-0-34-1"
        x="478.76562"
@@ -611,7 +788,10 @@
      x="478.73438"
      y="491.82422"
      id="text6012-8-9-6-6-4-7-4-8"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6014-8-7-2-9-5-0-9-1"
        x="478.73438"
@@ -623,7 +803,10 @@
      x="479.01562"
      y="515.92969"
      id="text6012-8-9-6-6-4-7-2-8"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6014-8-7-2-9-5-0-98-5"
        x="479.01562"
@@ -635,7 +818,10 @@
      x="478.60156"
      y="539.81641"
      id="text6012-8-9-6-6-4-7-2-9-0"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6014-8-7-2-9-5-0-98-4-0"
        x="478.60156"
@@ -647,7 +833,10 @@
      x="478.85938"
      y="563.82422"
      id="text6012-8-9-6-6-4-7-2-4-8"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6014-8-7-2-9-5-0-98-9-0"
        x="478.85938"
@@ -660,14 +849,20 @@
      height="19"
      x="304.5"
      y="236.5"
-     ry="1.9000001" />
+     ry="1.9000001"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      xml:space="preserve"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
      x="310.24414"
      y="250.36816"
      id="text6334"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6336"
        x="310.24414"
@@ -680,14 +875,20 @@
      height="19"
      x="304.5"
      y="260.5"
-     ry="1.9000001" />
+     ry="1.9000001"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      xml:space="preserve"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
      x="317.53613"
      y="274.37402"
      id="text6334-2"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6336-9"
        x="317.53613"
@@ -700,14 +901,20 @@
      height="19"
      x="304.5"
      y="284.5"
-     ry="1.9000001" />
+     ry="1.9000001"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      xml:space="preserve"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
      x="318.58496"
      y="298.37402"
      id="text6334-5"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6336-4"
        x="318.58496"
@@ -722,13 +929,19 @@
      sodipodi:rx="5"
      sodipodi:ry="6"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
-     transform="matrix(0.7,0,0,0.58333303,94.499997,-79.49983)" />
+     transform="matrix(0.7,0,0,0.58333303,94.499997,-79.49983)"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      sodipodi:nodetypes="cc"
      inkscape:connector-curvature="0"
      id="path6385"
      d="m 378,318 -106,0"
-     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      transform="matrix(0.7,0,0,0.58333303,94.499997,-7.49983)"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
@@ -738,7 +951,10 @@
      sodipodi:cx="405"
      id="path6387"
      style="fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.56492198;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-     sodipodi:type="arc" />
+     sodipodi:type="arc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      ry="1.9000001"
      y="308.5"
@@ -746,14 +962,20 @@
      height="19"
      width="55"
      id="rect6391"
-     style="fill:#ffeeaa;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+     style="fill:#ffeeaa;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      sodipodi:linespacing="125%"
      id="text6393"
      y="322.45312"
      x="327.87207"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
-     xml:space="preserve"><tspan
+     xml:space="preserve"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        style="font-size:12px;font-weight:bold;-inkscape-font-specification:Sans Bold"
        y="322.45312"
        x="327.87207"
@@ -764,7 +986,10 @@
      d="m 378,390 -52,0"
      id="path6381-5"
      inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cc" />
+     sodipodi:nodetypes="cc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      sodipodi:type="arc"
      style="fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.56492198;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
@@ -774,13 +999,19 @@
      sodipodi:rx="5"
      sodipodi:ry="6"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
-     transform="matrix(0.7,0,0,0.58333303,94.499997,64.50017)" />
+     transform="matrix(0.7,0,0,0.58333303,94.499997,64.50017)"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      sodipodi:nodetypes="cc"
      inkscape:connector-curvature="0"
      id="path6377-5"
      d="m 378,366 -106,0"
-     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      transform="matrix(0.7,0,0,0.58333303,94.499997,40.50017)"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
@@ -790,13 +1021,19 @@
      sodipodi:cx="405"
      id="path6379-1"
      style="fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.56492198;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-     sodipodi:type="arc" />
+     sodipodi:type="arc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      d="m 378,342 -106,0"
      id="path6375-8"
      inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cc" />
+     sodipodi:nodetypes="cc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#ffeeaa;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
      id="rect6332-66"
@@ -804,14 +1041,20 @@
      height="19"
      x="304.5"
      y="332.5"
-     ry="1.9000001" />
+     ry="1.9000001"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      xml:space="preserve"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
      x="327.90137"
      y="346.36816"
      id="text6334-8"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6336-8"
        x="327.90137"
@@ -824,14 +1067,20 @@
      height="19"
      x="304.5"
      y="356.5"
-     ry="1.9000001" />
+     ry="1.9000001"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      xml:space="preserve"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
      x="327.83105"
      y="370.37402"
      id="text6334-2-8"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6336-9-9"
        x="327.83105"
@@ -844,14 +1093,20 @@
      height="19"
      x="304.5"
      y="380.5"
-     ry="1.9000001" />
+     ry="1.9000001"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      xml:space="preserve"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
      x="318.9043"
      y="394.36816"
      id="text6334-5-0"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6336-4-0"
        x="318.9043"
@@ -866,13 +1121,19 @@
      sodipodi:rx="5"
      sodipodi:ry="6"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
-     transform="matrix(0.7,0,0,0.58333303,94.499997,16.50017)" />
+     transform="matrix(0.7,0,0,0.58333303,94.499997,16.50017)"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      sodipodi:nodetypes="cc"
      inkscape:connector-curvature="0"
      id="path6385-0"
      d="m 378,414 -58,0"
-     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      transform="matrix(0.7,0,0,0.58333303,94.499997,88.50017)"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
@@ -882,7 +1143,10 @@
      sodipodi:cx="405"
      id="path6387-2"
      style="fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.56492198;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-     sodipodi:type="arc" />
+     sodipodi:type="arc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      ry="1.9000001"
      y="404.5"
@@ -890,14 +1154,20 @@
      height="19"
      width="55"
      id="rect6391-6"
-     style="fill:#1a1a1a;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+     style="fill:#1a1a1a;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      sodipodi:linespacing="125%"
      id="text6393-9"
      y="418.36816"
      x="317.08496"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
-     xml:space="preserve"><tspan
+     xml:space="preserve"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        style="font-size:12px;font-weight:bold;fill:#ffffff;-inkscape-font-specification:Sans Bold"
        y="418.36816"
        x="317.08496"
@@ -908,7 +1178,10 @@
      d="m 378,486 -106,0"
      id="path6381-3"
      inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cc" />
+     sodipodi:nodetypes="cc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      sodipodi:type="arc"
      style="fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.56492198;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
@@ -918,13 +1191,19 @@
      sodipodi:rx="5"
      sodipodi:ry="6"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
-     transform="matrix(0.7,0,0,0.58333303,94.499997,160.50017)" />
+     transform="matrix(0.7,0,0,0.58333303,94.499997,160.50017)"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      sodipodi:nodetypes="cc"
      inkscape:connector-curvature="0"
      id="path6377-59"
      d="m 378,462 -106,0"
-     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      transform="matrix(0.7,0,0,0.58333303,94.499997,136.50017)"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
@@ -934,13 +1213,19 @@
      sodipodi:cx="405"
      id="path6379-3"
      style="fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.56492198;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-     sodipodi:type="arc" />
+     sodipodi:type="arc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      d="m 378,438 -106,0"
      id="path6375-7"
      inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cc" />
+     sodipodi:nodetypes="cc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#ffeeaa;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
      id="rect6332-0"
@@ -948,14 +1233,20 @@
      height="19"
      x="304.5"
      y="428.5"
-     ry="1.9000001" />
+     ry="1.9000001"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      xml:space="preserve"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
      x="323.46582"
      y="442.36816"
      id="text6334-25"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6336-2"
        x="323.46582"
@@ -968,14 +1259,20 @@
      height="19"
      x="304.5"
      y="452.5"
-     ry="1.9000001" />
+     ry="1.9000001"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      xml:space="preserve"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
      x="323.5918"
      y="466.45312"
      id="text6334-2-0"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6336-9-4"
        x="323.5918"
@@ -988,14 +1285,20 @@
      height="19"
      x="304.5"
      y="476.5"
-     ry="1.9000001" />
+     ry="1.9000001"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      xml:space="preserve"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
      x="327.78125"
      y="490.28906"
      id="text6334-5-8"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6336-4-8"
        x="327.78125"
@@ -1010,13 +1313,19 @@
      sodipodi:rx="5"
      sodipodi:ry="6"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
-     transform="matrix(0.7,0,0,0.58333303,94.499997,112.50017)" />
+     transform="matrix(0.7,0,0,0.58333303,94.499997,112.50017)"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      sodipodi:nodetypes="cc"
      inkscape:connector-curvature="0"
      id="path6385-9"
      d="m 378,510 -106,0"
-     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      transform="matrix(0.7,0,0,0.58333303,94.499997,184.50017)"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
@@ -1026,7 +1335,10 @@
      sodipodi:cx="405"
      id="path6387-4"
      style="fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.56492198;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-     sodipodi:type="arc" />
+     sodipodi:type="arc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      ry="1.9000001"
      y="500.5"
@@ -1034,14 +1346,20 @@
      height="19"
      width="55"
      id="rect6391-9"
-     style="fill:#ffeeaa;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+     style="fill:#ffeeaa;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      sodipodi:linespacing="125%"
      id="text6393-99"
      y="514.3623"
      x="327.77539"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
-     xml:space="preserve"><tspan
+     xml:space="preserve"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        style="font-size:12px;font-weight:bold;-inkscape-font-specification:Sans Bold"
        y="514.3623"
        x="327.77539"
@@ -1052,7 +1370,10 @@
      inkscape:connector-curvature="0"
      id="path6377-5-7"
      d="m 378,558 -106,0 0,56 358,0 0,-40 20,0"
-     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      transform="matrix(0.7,0,0,0.58333303,94.499997,232.50017)"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
@@ -1062,13 +1383,19 @@
      sodipodi:cx="405"
      id="path6379-1-2"
      style="fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.56492198;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-     sodipodi:type="arc" />
+     sodipodi:type="arc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      d="m 378,534 -106,0"
      id="path6375-8-1"
      inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cc" />
+     sodipodi:nodetypes="cc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#ffeeaa;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
      id="rect6332-66-2"
@@ -1076,14 +1403,20 @@
      height="19"
      x="304.5"
      y="524.5"
-     ry="1.9000001" />
+     ry="1.9000001"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      xml:space="preserve"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
      x="327.90137"
      y="538.37402"
      id="text6334-8-7"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6336-8-6"
        x="327.90137"
@@ -1096,14 +1429,20 @@
      height="19"
      x="304.5"
      y="548.5"
-     ry="1.9000001" />
+     ry="1.9000001"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      xml:space="preserve"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
      x="327.83105"
      y="562.36816"
      id="text6334-2-8-0"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6336-9-9-2"
        x="327.83105"
@@ -1118,13 +1457,19 @@
      sodipodi:rx="5"
      sodipodi:ry="6"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
-     transform="matrix(0.7,0,0,0.58333303,94.499997,208.50017)" />
+     transform="matrix(0.7,0,0,0.58333303,94.499997,208.50017)"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      d="m 800,294 -274,0"
      id="path6381-0"
      inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cc" />
+     sodipodi:nodetypes="cc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      sodipodi:type="arc"
      style="fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.56492198;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
@@ -1134,13 +1479,19 @@
      sodipodi:rx="5"
      sodipodi:ry="6"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
-     transform="matrix(0.7,0,0,0.58333303,242.5,-31.49983)" />
+     transform="matrix(0.7,0,0,0.58333303,242.5,-31.49983)"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      sodipodi:nodetypes="cc"
      inkscape:connector-curvature="0"
      id="path6377-8"
      d="m 632,270 -106,0"
-     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      transform="matrix(0.7,0,0,0.58333303,242.5,-55.49983)"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
@@ -1150,13 +1501,19 @@
      sodipodi:cx="405"
      id="path6379-35"
      style="fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.56492198;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-     sodipodi:type="arc" />
+     sodipodi:type="arc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      d="m 632,246 -106,0"
      id="path6375-4"
      inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cc" />
+     sodipodi:nodetypes="cc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#5fbcd3;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
      id="rect6332-5"
@@ -1164,14 +1521,20 @@
      height="19"
      x="544.5"
      y="236.5"
-     ry="1.9000001" />
+     ry="1.9000001"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      xml:space="preserve"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
      x="559.17969"
      y="250.36816"
      id="text6334-88"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6336-99"
        x="559.17969"
@@ -1184,14 +1547,20 @@
      height="19"
      x="544.5"
      y="260.5"
-     ry="1.9000001" />
+     ry="1.9000001"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      xml:space="preserve"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
      x="557.65039"
      y="274.36816"
      id="text6334-2-2"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6336-9-0"
        x="557.65039"
@@ -1204,14 +1573,20 @@
      height="19"
      x="544.5"
      y="284.5"
-     ry="1.9000001" />
+     ry="1.9000001"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      xml:space="preserve"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
      x="563.63281"
      y="298.36816"
      id="text6334-5-6"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6336-4-85"
        x="563.63281"
@@ -1226,13 +1601,19 @@
      sodipodi:rx="5"
      sodipodi:ry="6"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
-     transform="matrix(0.7,0,0,0.58333303,242.5,-79.49983)" />
+     transform="matrix(0.7,0,0,0.58333303,242.5,-79.49983)"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      sodipodi:nodetypes="cc"
      inkscape:connector-curvature="0"
      id="path6385-5"
      d="m 800,318 -274,0"
-     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      transform="matrix(0.7,0,0,0.58333303,242.5,-7.49983)"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
@@ -1242,7 +1623,10 @@
      sodipodi:cx="405"
      id="path6387-49"
      style="fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.56492198;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-     sodipodi:type="arc" />
+     sodipodi:type="arc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      ry="1.9000001"
      y="308.5"
@@ -1250,14 +1634,20 @@
      height="19"
      width="55"
      id="rect6391-2"
-     style="fill:#5aa02c;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+     style="fill:#5aa02c;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      sodipodi:linespacing="125%"
      id="text6393-7"
      y="322.45312"
      x="563.67676"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
-     xml:space="preserve"><tspan
+     xml:space="preserve"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        style="font-size:12px;font-weight:bold;-inkscape-font-specification:Sans Bold"
        y="322.45312"
        x="563.67676"
@@ -1268,7 +1658,10 @@
      d="m 594,390 -68,0"
      id="path6381-5-2"
      inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cc" />
+     sodipodi:nodetypes="cc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      sodipodi:type="arc"
      style="fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.56492198;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
@@ -1278,13 +1671,19 @@
      sodipodi:rx="5"
      sodipodi:ry="6"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
-     transform="matrix(0.7,0,0,0.58333303,242.5,64.50017)" />
+     transform="matrix(0.7,0,0,0.58333303,242.5,64.50017)"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      sodipodi:nodetypes="cc"
      inkscape:connector-curvature="0"
      id="path6377-5-6"
      d="m 698,366 -172,0"
-     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      transform="matrix(0.7,0,0,0.58333303,242.5,40.50017)"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
@@ -1294,13 +1693,19 @@
      sodipodi:cx="405"
      id="path6379-1-9"
      style="fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.56492198;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-     sodipodi:type="arc" />
+     sodipodi:type="arc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      d="m 698,342 -172,0"
      id="path6375-8-8"
      inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cc" />
+     sodipodi:nodetypes="cc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#5aa02c;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
      id="rect6332-66-7"
@@ -1308,14 +1713,20 @@
      height="19"
      x="544.5"
      y="332.5"
-     ry="1.9000001" />
+     ry="1.9000001"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      xml:space="preserve"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
      x="563.56836"
      y="346.37402"
      id="text6334-8-9"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6336-8-2"
        x="563.56836"
@@ -1328,14 +1739,20 @@
      height="19"
      x="544.5"
      y="356.5"
-     ry="1.9000001" />
+     ry="1.9000001"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      xml:space="preserve"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
      x="563.44238"
      y="370.36816"
      id="text6334-2-8-09"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6336-9-9-9"
        x="563.44238"
@@ -1348,14 +1765,20 @@
      height="19"
      x="544.5"
      y="380.5"
-     ry="1.9000001" />
+     ry="1.9000001"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      xml:space="preserve"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
      x="557.08496"
      y="394.36816"
      id="text6334-5-0-7"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6336-4-0-1"
        x="557.08496"
@@ -1370,13 +1793,19 @@
      sodipodi:rx="5"
      sodipodi:ry="6"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
-     transform="matrix(0.7,0,0,0.58333303,242.5,16.50017)" />
+     transform="matrix(0.7,0,0,0.58333303,242.5,16.50017)"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      sodipodi:nodetypes="cc"
      inkscape:connector-curvature="0"
      id="path6385-0-5"
      d="m 594,414 -68,0"
-     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      transform="matrix(0.7,0,0,0.58333303,242.5,88.50017)"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
@@ -1386,7 +1815,10 @@
      sodipodi:cx="405"
      id="path6387-2-3"
      style="fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.56492198;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-     sodipodi:type="arc" />
+     sodipodi:type="arc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      ry="1.9000001"
      y="404.5"
@@ -1394,14 +1826,20 @@
      height="19"
      width="55"
      id="rect6391-6-9"
-     style="fill:#5aa02c;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+     style="fill:#5aa02c;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      sodipodi:linespacing="125%"
      id="text6393-9-0"
      y="418.37402"
      x="555.0166"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
-     xml:space="preserve"><tspan
+     xml:space="preserve"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        style="font-size:12px;font-weight:bold;-inkscape-font-specification:Sans Bold"
        y="418.37402"
        x="555.0166"
@@ -1412,7 +1850,10 @@
      d="m 700,486 -174,0"
      id="path6381-3-7"
      inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cc" />
+     sodipodi:nodetypes="cc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      sodipodi:type="arc"
      style="fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.56492198;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
@@ -1422,13 +1863,19 @@
      sodipodi:rx="5"
      sodipodi:ry="6"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
-     transform="matrix(0.7,0,0,0.58333303,242.5,160.50017)" />
+     transform="matrix(0.7,0,0,0.58333303,242.5,160.50017)"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      sodipodi:nodetypes="cc"
      inkscape:connector-curvature="0"
      id="path6377-59-1"
      d="m 700,462 -174,0"
-     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      transform="matrix(0.7,0,0,0.58333303,242.5,136.50017)"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
@@ -1438,13 +1885,19 @@
      sodipodi:cx="405"
      id="path6379-3-2"
      style="fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.56492198;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-     sodipodi:type="arc" />
+     sodipodi:type="arc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      d="m 590,438 -64,0"
      id="path6375-7-1"
      inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cc" />
+     sodipodi:nodetypes="cc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
      id="rect6332-0-0"
@@ -1452,14 +1905,20 @@
      height="19"
      x="544.5"
      y="428.5"
-     ry="1.9000001" />
+     ry="1.9000001"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      xml:space="preserve"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
      x="558.9043"
      y="442.36816"
      id="text6334-25-6"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6336-2-8"
        x="558.9043"
@@ -1472,14 +1931,20 @@
      height="19"
      x="544.5"
      y="452.5"
-     ry="1.9000001" />
+     ry="1.9000001"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      xml:space="preserve"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
      x="563.4541"
      y="466.36816"
      id="text6334-2-0-0"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6336-9-4-9"
        x="563.4541"
@@ -1492,14 +1957,20 @@
      height="19"
      x="544.5"
      y="476.5"
-     ry="1.9000001" />
+     ry="1.9000001"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      xml:space="preserve"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
      x="563.49805"
      y="490.45312"
      id="text6334-5-8-9"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6336-4-8-9"
        x="563.49805"
@@ -1514,13 +1985,19 @@
      sodipodi:rx="5"
      sodipodi:ry="6"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
-     transform="matrix(0.7,0,0,0.58333303,242.5,112.50017)" />
+     transform="matrix(0.7,0,0,0.58333303,242.5,112.50017)"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      sodipodi:nodetypes="cc"
      inkscape:connector-curvature="0"
      id="path6385-9-0"
      d="m 700,510 -174,0"
-     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      transform="matrix(0.7,0,0,0.58333303,242.5,184.50017)"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
@@ -1530,7 +2007,10 @@
      sodipodi:cx="405"
      id="path6387-4-2"
      style="fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.56492198;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-     sodipodi:type="arc" />
+     sodipodi:type="arc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      ry="1.9000001"
      y="500.5"
@@ -1538,14 +2018,20 @@
      height="19"
      width="55"
      id="rect6391-9-2"
-     style="fill:#ffeeaa;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+     style="fill:#ffeeaa;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      sodipodi:linespacing="125%"
      id="text6393-99-5"
      y="514.37402"
      x="563.38965"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
-     xml:space="preserve"><tspan
+     xml:space="preserve"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        style="font-size:12px;font-weight:bold;-inkscape-font-specification:Sans Bold"
        y="514.37402"
        x="563.38965"
@@ -1556,7 +2042,10 @@
      inkscape:connector-curvature="0"
      id="path6377-5-7-4"
      d="m 650,558 -124,0"
-     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      transform="matrix(0.7,0,0,0.58333303,242.5,232.50017)"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
@@ -1566,13 +2055,19 @@
      sodipodi:cx="405"
      id="path6379-1-2-6"
      style="fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.56492198;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-     sodipodi:type="arc" />
+     sodipodi:type="arc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      d="m 700,534 -174,0"
      id="path6375-8-1-2"
      inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cc" />
+     sodipodi:nodetypes="cc"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#ffeeaa;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
      id="rect6332-66-2-3"
@@ -1580,14 +2075,20 @@
      height="19"
      x="544.5"
      y="524.5"
-     ry="1.9000001" />
+     ry="1.9000001"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      xml:space="preserve"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
      x="563.26367"
      y="538.36816"
      id="text6334-8-7-9"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6336-8-6-1"
        x="563.26367"
@@ -1600,14 +2101,20 @@
      height="19"
      x="544.5"
      y="548.5"
-     ry="1.9000001" />
+     ry="1.9000001"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      xml:space="preserve"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
      x="568.22656"
      y="562.37402"
      id="text6334-2-8-0-2"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan6336-9-9-2-0"
        x="568.22656"
@@ -1622,7 +2129,10 @@
      sodipodi:rx="5"
      sodipodi:ry="6"
      d="m 410,558 a 5,6 0 1 1 -10,0 5,6 0 1 1 10,0 z"
-     transform="matrix(0.7,0,0,0.58333303,242.5,208.50017)" />
+     transform="matrix(0.7,0,0,0.58333303,242.5,208.50017)"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.99999994000000003;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
      id="rect7008"
@@ -1630,14 +2140,20 @@
      height="63"
      x="148.50002"
      y="238.5"
-     ry="1.8136365" />
+     ry="1.8136365"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      xml:space="preserve"
      style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:#000000;font-family:Sans;-inkscape-font-specification:Sans Bold"
      x="174.06349"
      y="280.20605"
      id="text7010"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan7012"
        x="174.06349"
@@ -1649,14 +2165,20 @@
      height="43"
      x="632.5"
      y="236.5"
-     ry="1.7724175" />
+     ry="1.7724175"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <text
      xml:space="preserve"
      style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
      x="708.94531"
      y="253.96484"
      id="text7016"
-     sodipodi:linespacing="125%"><tspan
+     sodipodi:linespacing="125%"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan7018"
        x="708.94531"
@@ -1672,10 +2194,16 @@
      height="79"
      width="79"
      id="rect7022"
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.99999988;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.99999988;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <g
      id="g7054"
-     transform="translate(40,-80)">
+     transform="translate(40,-80)"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90">
     <rect
        ry="2"
        y="354"
@@ -1693,7 +2221,7 @@
        id="rect7032"
        style="fill:#333333;fill-opacity:1;fill-rule:evenodd;stroke:none" />
     <path
-       d="m 808,384 a 8,8 0 1 1 -16,0 8,8 0 1 1 16,0 z"
+       d="m 808,384 c 0,4.41828 -3.58172,8 -8,8 -4.41828,0 -8,-3.58172 -8,-8 0,-4.41828 3.58172,-8 8,-8 4.41828,0 8,3.58172 8,8 z"
        sodipodi:ry="8"
        sodipodi:rx="8"
        sodipodi:cy="384"
@@ -1749,7 +2277,10 @@
      height="79"
      x="650.5"
      y="332.5"
-     ry="3.2563021" />
+     ry="3.2563021"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      sodipodi:type="arc"
      style="fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke:none"
@@ -1759,7 +2290,10 @@
      sodipodi:rx="30"
      sodipodi:ry="30"
      d="m 770,374 a 30,30 0 1 1 -60,0 30,30 0 1 1 60,0 z"
-     transform="translate(-50,-2)" />
+     transform="translate(-50,-2)"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      sodipodi:type="arc"
      style="fill:#1a1a1a;fill-opacity:1;fill-rule:evenodd;stroke:none"
@@ -1769,7 +2303,10 @@
      sodipodi:rx="24"
      sodipodi:ry="24"
      d="m 764,374 a 24,24 0 1 1 -48,0 24,24 0 1 1 48,0 z"
-     transform="matrix(0.91666672,0,0,0.9166667,11.666627,29.166653)" />
+     transform="matrix(0.91666672,0,0,0.9166667,11.666627,29.166653)"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      ry="3.6684923"
      y="454.5"
@@ -1777,7 +2314,10 @@
      height="89"
      width="91"
      id="rect7077"
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.99999982;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.99999982;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      sodipodi:type="arc"
      style="fill:#0055d4;fill-opacity:1;fill-rule:evenodd;stroke:none"
@@ -1787,7 +2327,10 @@
      sodipodi:rx="10"
      sodipodi:ry="10"
      d="m 740,464 a 10,10 0 1 1 -20,0 10,10 0 1 1 20,0 z"
-     transform="matrix(1.2,0,0,1.2,-180,-80.800031)" />
+     transform="matrix(1.2,0,0,1.2,-180,-80.800031)"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      d="m 740,464 a 10,10 0 1 1 -20,0 10,10 0 1 1 20,0 z"
      sodipodi:ry="10"
@@ -1797,7 +2340,10 @@
      id="path7071"
      style="fill:#008000;fill-opacity:1;fill-rule:evenodd;stroke:none"
      sodipodi:type="arc"
-     transform="matrix(1.2,0,0,1.2,-204,-56.800031)" />
+     transform="matrix(1.2,0,0,1.2,-204,-56.800031)"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      transform="matrix(1.2,0,0,1.2,-156,-56.800031)"
      sodipodi:type="arc"
@@ -1807,7 +2353,10 @@
      sodipodi:cy="464"
      sodipodi:rx="10"
      sodipodi:ry="10"
-     d="m 740,464 a 10,10 0 1 1 -20,0 10,10 0 1 1 20,0 z" />
+     d="m 740,464 a 10,10 0 1 1 -20,0 10,10 0 1 1 20,0 z"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <path
      d="m 740,464 a 10,10 0 1 1 -20,0 10,10 0 1 1 20,0 z"
      sodipodi:ry="10"
@@ -1817,7 +2366,10 @@
      id="path7075"
      style="fill:#ffcc00;fill-opacity:1;fill-rule:evenodd;stroke:none"
      sodipodi:type="arc"
-     transform="matrix(1.2,0,0,1.2,-180,-32.800031)" />
+     transform="matrix(1.2,0,0,1.2,-180,-32.800031)"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <rect
      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.99999982;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
      id="rect7085"
@@ -1825,10 +2377,16 @@
      height="41"
      x="650.5"
      y="550.5"
-     ry="1.6899797" />
+     ry="1.6899797"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
   <g
      id="g7087"
-     transform="translate(-9.2190872,-9.7808654)">
+     transform="translate(-9.2190872,-9.7808654)"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90">
     <rect
        transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,0,0)"
        ry="3"
@@ -1848,4 +2406,212 @@
        ry="3"
        transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,0,0)" />
   </g>
+  <rect
+     inkscape:export-ydpi="90"
+     inkscape:export-xdpi="90"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     id="rect3245"
+     width="121"
+     height="19"
+     x="150.5"
+     y="308.5"
+     ry="1.9000001" />
+  <text
+     inkscape:export-ydpi="90"
+     inkscape:export-xdpi="90"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     xml:space="preserve"
+     style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+     x="157.38086"
+     y="322.36816"
+     id="text3247"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3249"
+       x="157.38086"
+       y="322.36816"
+       style="font-size:12px;font-weight:bold;-inkscape-font-specification:Sans Bold">POWER SWITCH</tspan></text>
+  <rect
+     ry="1.9000001"
+     y="332.5"
+     x="210.5"
+     height="19"
+     width="61"
+     id="rect3251"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
+  <text
+     sodipodi:linespacing="125%"
+     id="text3253"
+     y="345.81738"
+     x="224.43848"
+     style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+     xml:space="preserve"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
+       style="font-size:12px;font-weight:bold;-inkscape-font-specification:Sans Bold"
+       y="345.81738"
+       x="224.43848"
+       id="tspan3255"
+       sodipodi:role="line">/KILL</tspan></text>
+  <rect
+     inkscape:export-ydpi="90"
+     inkscape:export-xdpi="90"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     id="rect3257"
+     width="167"
+     height="19"
+     x="104.5"
+     y="356.5"
+     ry="1.9000001" />
+  <text
+     inkscape:export-ydpi="90"
+     inkscape:export-xdpi="90"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     xml:space="preserve"
+     style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+     x="123.50879"
+     y="370.36816"
+     id="text3259"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3261"
+       x="123.50879"
+       y="370.36816"
+       style="font-size:12px;font-weight:bold;-inkscape-font-specification:Sans Bold">PWR MOSFET GRID</tspan></text>
+  <rect
+     inkscape:export-ydpi="90"
+     inkscape:export-xdpi="90"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     id="rect3263"
+     width="61"
+     height="19"
+     x="210.5"
+     y="428.5"
+     ry="1.9000001" />
+  <text
+     inkscape:export-ydpi="90"
+     inkscape:export-xdpi="90"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     xml:space="preserve"
+     style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+     x="223.12598"
+     y="442.36816"
+     id="text3265"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3267"
+       x="223.12598"
+       y="442.36816"
+       style="font-size:12px;font-weight:bold;-inkscape-font-specification:Sans Bold">VOL+</tspan></text>
+  <rect
+     ry="1.9000001"
+     y="452.5"
+     x="210.5"
+     height="19"
+     width="61"
+     id="rect3269"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
+  <text
+     sodipodi:linespacing="125%"
+     id="text3271"
+     y="466.36816"
+     x="225.35254"
+     style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+     xml:space="preserve"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
+       style="font-size:12px;font-weight:bold;-inkscape-font-specification:Sans Bold"
+       y="466.36816"
+       x="225.35254"
+       id="tspan3273"
+       sodipodi:role="line">VOL-</tspan></text>
+  <rect
+     inkscape:export-ydpi="90"
+     inkscape:export-xdpi="90"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     id="rect3275"
+     width="97"
+     height="19"
+     x="174.49998"
+     y="476.5"
+     ry="1.9000001" />
+  <text
+     inkscape:export-ydpi="90"
+     inkscape:export-xdpi="90"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     xml:space="preserve"
+     style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+     x="182.48827"
+     y="490.36816"
+     id="text3277"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3279"
+       x="182.48827"
+       y="490.36816"
+       style="font-size:12px;font-weight:bold;-inkscape-font-specification:Sans Bold">STATUS LED</tspan></text>
+  <rect
+     ry="1.9000001"
+     y="500.5"
+     x="174.5"
+     height="19"
+     width="97"
+     id="rect3281"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
+  <text
+     sodipodi:linespacing="125%"
+     id="text3283"
+     y="514.36816"
+     x="186.35547"
+     style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+     xml:space="preserve"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"><tspan
+       style="font-size:12px;font-weight:bold;-inkscape-font-specification:Sans Bold"
+       y="514.36816"
+       x="186.35547"
+       id="tspan3285"
+       sodipodi:role="line">R TRIGGER</tspan></text>
+  <rect
+     inkscape:export-ydpi="90"
+     inkscape:export-xdpi="90"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     id="rect3287"
+     width="97"
+     height="19"
+     x="174.5"
+     y="524.5"
+     ry="1.9000001" />
+  <text
+     inkscape:export-ydpi="90"
+     inkscape:export-xdpi="90"
+     inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
+     xml:space="preserve"
+     style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+     x="187.15234"
+     y="538.36816"
+     id="text3289"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3291"
+       x="187.15234"
+       y="538.36816"
+       style="font-size:12px;font-weight:bold;-inkscape-font-specification:Sans Bold">L TRIGGER</tspan></text>
 </svg>
