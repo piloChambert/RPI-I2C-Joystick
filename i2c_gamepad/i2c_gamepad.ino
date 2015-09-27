@@ -14,24 +14,25 @@
 #define BTN_BOTTOM      0x09
 #define BTN_LEFT        0x0A
 #define BTN_RIGHT       0x0B
+#define BTN_DUMMY       0xFF
 
-typedef struct {
+struct InputSwitch {
   unsigned char pin;
   unsigned char state;
   unsigned long time;
   unsigned char code;
-} InputSwitch;
+};
 
 // I2C data definition
-typedef struct {
+struct I2CJoystickStatus {
   uint16_t buttons; // button status
   uint8_t axis0; // first axis
   uint8_t axis1; // second axis
   uint8_t powerDownRequest; // when true, request the pi to shutdown
-} I2CJoystickStatus;
+  uint8_t audioVolume;
+};
 
 I2CJoystickStatus joystickStatus;
-
 
 // ------------------------------------------
 // Configuration
@@ -46,18 +47,36 @@ I2CJoystickStatus joystickStatus;
 
 // the 8 switches 
 InputSwitch switches[] = {
-  {20, HIGH, 0, BTN_A},
-  {21, HIGH, 0, BTN_B},
-  {5, HIGH, 0, BTN_X},
-  {6, HIGH, 0, BTN_Y},
-  {9, HIGH, 0, BTN_LT},
-  {10, HIGH, 0, BTN_RT},
-  {11, HIGH, 0, BTN_START},
-  {12, HIGH, 0, BTN_SELECT}
+  {13, HIGH, 0, BTN_A},
+  {12, HIGH, 0, BTN_B},
+  {11, HIGH, 0, BTN_X},
+  {10, HIGH, 0, BTN_Y},
+  {7, HIGH, 0, BTN_LT},
+  {6, HIGH, 0, BTN_RT},
+  {8, HIGH, 0, BTN_START},
+  {9, HIGH, 0, BTN_SELECT}
 };
 
-#define POWER_LED_PIN 13
+#define POWER_LED_PIN 5
 #define POWER_SWITCH_PIN 2
+
+InputSwitch volPlusSwitch = {20, HIGH, 0, BTN_DUMMY};
+InputSwitch volMinusSwitch = {21, HIGH, 0, BTN_DUMMY};
+
+// return true if switch state has changed!
+bool updateSwitch(struct InputSwitch *sw) {
+  int newState = digitalRead(sw->pin);
+
+  if(newState != sw->state && millis() - sw->time > SWITCH_DEBOUNCE_TIME) {
+    // change state!
+    sw->state = newState;
+
+    // record last update
+    sw->time = millis();
+    
+    return true;
+  }
+}
 
 void pinInterrupt(void) {
   detachInterrupt(0);
@@ -106,6 +125,7 @@ void setup()
   joystickStatus.axis0 = 127;
   joystickStatus.axis1 = 127;
   joystickStatus.powerDownRequest = 0;
+  joystickStatus.audioVolume = 100;
   
   // pin configuration
   for(int i = 0; i < sizeof(switches) / sizeof(InputSwitch); i++) {
@@ -116,50 +136,35 @@ void setup()
   digitalWrite(POWER_LED_PIN, HIGH);
 
   pinMode(POWER_SWITCH_PIN, INPUT_PULLUP);
+
+  pinMode(volPlusSwitch.pin, INPUT_PULLUP);
+  pinMode(volMinusSwitch.pin, INPUT_PULLUP);
 }
 
 void scanInput() {
   for(int i = 0; i < sizeof(switches) / sizeof(InputSwitch); i++) {
-    // read new state
-    int newState = digitalRead(switches[i].pin);
-
-    // if state has changed
-    if(newState != switches[i].state && millis() - switches[i].time > SWITCH_DEBOUNCE_TIME) {
-      // debug
-      /*
-      Serial.print("switch ");
-      Serial.print(i);
-      Serial.print("(");
-      Serial.print(switches[i].code);
-      Serial.print("): ");
-      */
-
-      if(newState == HIGH) {
-        // button released
+    if(updateSwitch(&switches[i])) {
+      if(switches[i].state == HIGH) // button released
         joystickStatus.buttons &= ~(1 << switches[i].code);
-        //Serial.println("HIGH");
-      } else {
-        // button pressed
+      else // button pressed
         joystickStatus.buttons |= (1 << switches[i].code);
-        //Serial.println("LOW");
-      }
-    
-      switches[i].state = newState;
-      switches[i].time = millis();
     }
   }
 
-  static uint16_t oldButtons = 0;
-
-  if(oldButtons != joystickStatus.buttons) {
-    Serial.println(joystickStatus.buttons);
-    oldButtons = joystickStatus.buttons;
-  }
-
+  /* shut down!!! */
   if(digitalRead(POWER_SWITCH_PIN) == LOW)
     joystickStatus.powerDownRequest = 1;
   else
     joystickStatus.powerDownRequest = 0;
+
+  // volume
+  if(updateSwitch(&volPlusSwitch) && volPlusSwitch.state == LOW) {
+    joystickStatus.audioVolume = min(joystickStatus.audioVolume + 5, 100); 
+  }
+
+  if(updateSwitch(&volMinusSwitch) && volMinusSwitch.state == LOW) {
+    joystickStatus.audioVolume = max(joystickStatus.audioVolume - 5, 0); 
+  }
 }
 
 void scanAnalog() {
@@ -195,7 +200,6 @@ void loop() {
 
 // function that executes whenever data is requested by master
 // this function is registered as an event, see setup()
-void requestEvent()
-{
+void requestEvent() {
   Wire.write((char *)&joystickStatus, sizeof(I2CJoystickStatus)); 
 }

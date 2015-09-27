@@ -45,9 +45,9 @@
      showgrid="true"
      inkscape:snap-bbox="true"
      inkscape:snap-bbox-midpoints="true"
-     inkscape:zoom="1.7095346"
-     inkscape:cx="434.8548"
-     inkscape:cy="565.75999"
+     inkscape:zoom="0.60441175"
+     inkscape:cx="85.16627"
+     inkscape:cy="436.08366"
      inkscape:window-x="-2"
      inkscape:window-y="-3"
      inkscape:window-maximized="1"
@@ -2146,9 +2146,9 @@
      inkscape:export-ydpi="90" />
   <text
      xml:space="preserve"
-     style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:#000000;font-family:Sans;-inkscape-font-specification:Sans Bold"
-     x="174.06349"
-     y="280.20605"
+     style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#000000;font-family:Sans;-inkscape-font-specification:Sans Bold"
+     x="209.77736"
+     y="263.57812"
      id="text7010"
      sodipodi:linespacing="125%"
      inkscape:export-filename="/home/pilo/pi/RPI-I2C-Joystick/arduino_RPi_Joystick.png"
@@ -2156,8 +2156,12 @@
      inkscape:export-ydpi="90"><tspan
        sodipodi:role="line"
        id="tspan7012"
-       x="174.06349"
-       y="280.20605">FTDI</tspan></text>
+       x="209.77736"
+       y="263.57812">FTDI</tspan><tspan
+       sodipodi:role="line"
+       x="209.77736"
+       y="293.57812"
+       id="tspan3293">PROG</tspan></text>
   <rect
      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
      id="rect7014"
