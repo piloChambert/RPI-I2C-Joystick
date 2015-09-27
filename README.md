@@ -1,6 +1,7 @@
 RPI-I2C-Joystick
 ==========
 I2C Arduino based joystick for Raspberry Pi in order to be used with [RetroPie](https://github.com/RetroPie/RetroPie-Setup).
+The Arduino is also used to control audio volume and power management (switch the Raspberry Pi on and off).
 
 Aruino
 ---------------
@@ -18,6 +19,11 @@ The [i2c_gamepad](https://github.com/piloChambert/RPI-I2C-Joystick/i2c_gamepad) 
 Raspberry Pi
 ------------
 
-The [blob](https://github.com/piloChambert/RPI-I2C-Joystick/blob) directory contains the blob file to be compiled in the boot folder of the pi, in order to activate a /KILL signal when the pi is halted. (see https://www.raspberrypi.org/forums/viewtopic.php?f=41&t=114975 post).
+The [blob](https://github.com/piloChambert/RPI-I2C-Joystick/blob) directory contains a blob file to be compiled in the boot folder of the pi, in order to activate a /KILL signal when the pi is halted. (see https://www.raspberrypi.org/forums/viewtopic.php?f=41&t=114975 post).
+**This is no longer used**, instead the gpio-poweroff dtoverlay has to be activated in /boot/config.txt:
+
+```
+dtoverlay=gpio-poweroff,gpiopin=4,active_low="y"
+```
 
 The [driver](https://github.com/piloChambert/RPI-I2C-Joystick/driver) directory contains the code of the user space uinput driver for the arduino I2C joystick.
