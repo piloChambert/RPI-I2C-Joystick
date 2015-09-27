@@ -27,6 +27,7 @@ typedef struct {
   uint16_t buttons; // button status
   uint8_t axis0; // first axis
   uint8_t axis1; // second axis
+  uint8_t powerDownRequest; // when true, request the pi to shutdown
 } I2CJoystickStatus;
 
 I2CJoystickStatus joystickStatus;
@@ -104,7 +105,8 @@ void setup()
   joystickStatus.buttons = 0;
   joystickStatus.axis0 = 127;
   joystickStatus.axis1 = 127;
-
+  joystickStatus.powerDownRequest = 0;
+  
   // pin configuration
   for(int i = 0; i < sizeof(switches) / sizeof(InputSwitch); i++) {
     pinMode(switches[i].pin, INPUT_PULLUP);
@@ -153,6 +155,11 @@ void scanInput() {
     Serial.println(joystickStatus.buttons);
     oldButtons = joystickStatus.buttons;
   }
+
+  if(digitalRead(POWER_SWITCH_PIN) == LOW)
+    joystickStatus.powerDownRequest = 1;
+  else
+    joystickStatus.powerDownRequest = 0;
 }
 
 void scanAnalog() {
@@ -176,11 +183,14 @@ void scanAnalog() {
 void loop() {
   scanInput();
   scanAnalog();
-  
+
+  // test sleep
+  /*
   if(millis() - wakeUpTime > 5000) {
     Serial.println("Go to sleep");
     sleepNow();
   }
+  */
 }
 
 // function that executes whenever data is requested by master
