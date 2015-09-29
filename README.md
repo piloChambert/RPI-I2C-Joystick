@@ -27,3 +27,33 @@ dtoverlay=gpio-poweroff,gpiopin=4,active_low="y"
 ```
 
 The [driver](https://github.com/piloChambert/RPI-I2C-Joystick/driver) directory contains the code of the user space uinput driver for the arduino I2C joystick.
+
+Display Configuration
+---------------------
+
+I use a 4.3" 480x272 TFT display using composite video (maybe the worst quality possible). It would be better to use a DPI interface (with the GPIO, an HDMI to DPI converter, or a DSI to DPI converter).
+
+Here's my video and overscan settings in `/boot/config.txt`
+```
+disable_overscan=1
+
+overscan_left=34
+overscan_right=20
+overscan_top=16
+overscan_bottom=20
+overscan_scale=1
+
+# set the frame buffer to match the tft resolution
+framebuffer_width=480
+framebuffer_height=272
+framebuffer_depth=24
+
+# use PAL, it seems way better than NTSC!!
+sdtv_mode=2
+
+# 16:9 aspect
+sdtv_aspect=3
+
+```
+
+In order to setup the overscan settings, I used https://github.com/popcornmix/set_overscan, and then tweaked the values by hand.
