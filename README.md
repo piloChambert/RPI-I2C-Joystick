@@ -6,7 +6,7 @@ The Arduino is also used to control audio volume and power management (switch th
 Aruino
 ---------------
 
-![](https://github.com/piloChambert/RPI-I2C-Joystick/documentation/arduino_RPi_Joystick.png)
+![](https://github.com/piloChambert/RPI-I2C-Joystick/blob/master/documenation/arduino_RPi_Joystick.png)
 
 The arduino (an ATMega328 running with its internal 8Mhz clock) is used to control the Raspberry Pi. It's used to read joystick buttons and analog axis. 
 
