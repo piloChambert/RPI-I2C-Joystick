@@ -6,7 +6,7 @@ The Arduino is also used to control audio volume and power management (switch th
 Aruino
 ---------------
 
-![](https://github.com/piloChambert/RPI-I2C-Joystick/blob/master/arduino_RPi_Joystick.png)
+![](https://github.com/piloChambert/RPI-I2C-Joystick/documentation/arduino_RPi_Joystick.png)
 
 The arduino (an ATMega328 running with its internal 8Mhz clock) is used to control the Raspberry Pi. It's used to read joystick buttons and analog axis. 
 
@@ -19,9 +19,9 @@ The [i2c_gamepad](https://github.com/piloChambert/RPI-I2C-Joystick/i2c_gamepad) 
 Raspberry Pi
 ------------
 
-The [blob](https://github.com/piloChambert/RPI-I2C-Joystick/blob) directory contains a blob file to be compiled in the boot folder of the pi, in order to activate a /KILL signal when the pi is halted. (see https://www.raspberrypi.org/forums/viewtopic.php?f=41&t=114975 post).
-**This is no longer used**, instead the gpio-poweroff dtoverlay has to be activated in /boot/config.txt:
+In order to know when the raspberry pi has been shutdown, the gpio-poweroff overlay is used. This is the /kill signal going to the arduino (HIGH when the raspberry pi is halted).
 
+In /boot/config.txt:
 ```
 dtoverlay=gpio-poweroff,gpiopin=4,active_low="y"
 ```
