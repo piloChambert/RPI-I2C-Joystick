@@ -1,4 +1,4 @@
-s// http://elinux.org/Interfacing_with_I2C_Devices
+// http://elinux.org/Interfacing_with_I2C_Devices
 
 #include <stdio.h>
 #include <stdlib.h>

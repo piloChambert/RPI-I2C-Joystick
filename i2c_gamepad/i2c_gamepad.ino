@@ -58,6 +58,8 @@ InputSwitch switches[] = {
 };
 
 #define POWER_LED_PIN 5
+unsigned long ledBlinkTimer = 0;
+int ledStatus = LOW;
 #define POWER_SWITCH_PIN 2
 
 InputSwitch volPlusSwitch = {20, HIGH, 0, BTN_DUMMY};
@@ -102,8 +104,6 @@ void sleepNow() {
   // Upon waking up, sketch continues from this point.
   sleep_disable();
 
-  // turn led on
-  digitalWrite(POWER_LED_PIN, HIGH);
   wakeUpTime = millis();
   Serial.println("Awake!!");
 }
@@ -139,6 +139,11 @@ void setup()
 
   pinMode(volPlusSwitch.pin, INPUT_PULLUP);
   pinMode(volMinusSwitch.pin, INPUT_PULLUP);
+
+  // turn led on
+  ledStatus = HIGH;
+  ledBlinkTimer = millis();
+  digitalWrite(POWER_LED_PIN, ledStatus);
 }
 
 void scanInput() {
@@ -149,6 +154,12 @@ void scanInput() {
       else // button pressed
         joystickStatus.buttons |= (1 << switches[i].code);
     }
+  }
+
+  static uint16_t oldButtons = 0;
+  if(joystickStatus.buttons != oldButtons) {
+    Serial.println(joystickStatus.buttons);
+    oldButtons = joystickStatus.buttons;
   }
 
   /* shut down!!! */
@@ -196,6 +207,19 @@ void loop() {
     sleepNow();
   }
   */
+
+  // blink status led
+  if(millis() - ledBlinkTimer > 100) {
+    if(ledStatus == LOW) {
+      ledStatus = HIGH;
+    } else {
+      ledStatus = LOW;
+    }
+
+    digitalWrite(POWER_LED_PIN, ledStatus);
+    ledBlinkTimer = millis();
+  }
+
 }
 
 // function that executes whenever data is requested by master
