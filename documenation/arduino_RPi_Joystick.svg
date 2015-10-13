@@ -24,7 +24,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -45,9 +45,9 @@
      showgrid="true"
      inkscape:snap-bbox="true"
      inkscape:snap-bbox-midpoints="true"
-     inkscape:zoom="0.60441175"
-     inkscape:cx="85.16627"
-     inkscape:cy="436.08366"
+     inkscape:zoom="2.417647"
+     inkscape:cx="536.52959"
+     inkscape:cy="735.31424"
      inkscape:window-x="-2"
      inkscape:window-y="-3"
      inkscape:window-maximized="1"
@@ -1515,7 +1515,7 @@
      inkscape:export-xdpi="90"
      inkscape:export-ydpi="90" />
   <rect
-     style="fill:#5fbcd3;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     style="fill:#87cdde;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
      id="rect6332-5"
      width="55"
      height="19"
@@ -2487,7 +2487,7 @@
        id="tspan3261"
        x="123.50879"
        y="370.36816"
-       style="font-size:12px;font-weight:bold;-inkscape-font-specification:Sans Bold">PWR MOSFET GRID</tspan></text>
+       style="font-size:12px;font-weight:bold;-inkscape-font-specification:Sans Bold">PWR MOSFET GATE</tspan></text>
   <rect
      inkscape:export-ydpi="90"
      inkscape:export-xdpi="90"
