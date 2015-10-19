@@ -11,7 +11,7 @@
 #define BTN_START       0x06
 #define BTN_SELECT      0x07
 #define BTN_UP          0x08
-#define BTN_BOTTOM      0x09
+#define BTN_DOWN        0x09
 #define BTN_LEFT        0x0A
 #define BTN_RIGHT       0x0B
 #define BTN_DUMMY       0xFF
@@ -60,7 +60,9 @@ InputSwitch switches[] = {
 #define POWER_LED_PIN 5
 unsigned long ledBlinkTimer = 0;
 int ledStatus = LOW;
+
 #define POWER_SWITCH_PIN 2
+#define PI_KILL_PIN 3
 
 InputSwitch volPlusSwitch = {20, HIGH, 0, BTN_DUMMY};
 InputSwitch volMinusSwitch = {21, HIGH, 0, BTN_DUMMY};
@@ -136,6 +138,7 @@ void setup()
   digitalWrite(POWER_LED_PIN, HIGH);
 
   pinMode(POWER_SWITCH_PIN, INPUT_PULLUP);
+  pinMode(PI_KILL_PIN, INPUT_PULLUP);
 
   pinMode(volPlusSwitch.pin, INPUT_PULLUP);
   pinMode(volMinusSwitch.pin, INPUT_PULLUP);
@@ -193,12 +196,35 @@ void scanAnalog() {
 
   // read hat values
   int hatx = analogRead(HAT_PIN_X);
-  int haty = analogRead(HAT_PIN_X);
+  if(hatx > 125 && hatx < 275)
+    joystickStatus.buttons |= (1 << BTN_LEFT);
+  else
+    joystickStatus.buttons &= ~(1 << BTN_LEFT);
+
+  if(hatx > 325 && hatx < 475)
+    joystickStatus.buttons |= (1 << BTN_RIGHT);
+  else
+    joystickStatus.buttons &= ~(1 << BTN_RIGHT);
+  
+  int haty = analogRead(HAT_PIN_Y);
+  if(haty > 125 && haty < 275)
+    joystickStatus.buttons |= (1 << BTN_UP);
+  else
+    joystickStatus.buttons &= ~(1 << BTN_UP);
+
+  if(haty > 325 && haty < 475)
+    joystickStatus.buttons |= (1 << BTN_DOWN);
+  else
+    joystickStatus.buttons &= ~(1 << BTN_DOWN);
+  /*
+  Serial.print("x : "); Serial.print(hatx);
+  Serial.print("y : "); Serial.print(haty);
+  Serial.println("");*/
 }
 
 void loop() {
-  scanInput();
   scanAnalog();
+  scanInput();
 
   // test sleep
   /*
@@ -208,18 +234,24 @@ void loop() {
   }
   */
 
-  // blink status led
-  if(millis() - ledBlinkTimer > 100) {
-    if(ledStatus == LOW) {
-      ledStatus = HIGH;
-    } else {
-      ledStatus = LOW;
-    }
+  if(digitalRead(PI_KILL_PIN) == LOW) {
+    // blink status led
+    if(millis() - ledBlinkTimer > 100) {
+      if(ledStatus == LOW) {
+        ledStatus = HIGH;
+      } else {
+        ledStatus = LOW;
+      }
 
+      digitalWrite(POWER_LED_PIN, ledStatus);
+      ledBlinkTimer = millis();
+    }
+  } else {
+    ledStatus = HIGH;
     digitalWrite(POWER_LED_PIN, ledStatus);
-    ledBlinkTimer = millis();
   }
 
+  delay(10);
 }
 
 // function that executes whenever data is requested by master
