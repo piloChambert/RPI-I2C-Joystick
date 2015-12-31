@@ -67,6 +67,78 @@ int ledStatus = LOW;
 InputSwitch volPlusSwitch = {20, HIGH, 0, BTN_DUMMY};
 InputSwitch volMinusSwitch = {21, HIGH, 0, BTN_DUMMY};
 
+void (*stateFunction)(void);
+unsigned long wakeUpTime = 0;
+
+void startupState() {
+  // check power button
+  static char oldPower = HIGH;
+  int power = digitalRead(POWER_SWITCH_PIN);
+
+  static unsigned long powerTimer = 0;
+  if(power != oldPower && power == LOW) {
+    // reset timer
+    powerTimer = millis();
+    oldPower = power;
+  }
+
+  if(power == LOW && millis() - powerTimer > 4000) {
+    // change state
+    digitalWrite(POWER_LED_PIN, HIGH);
+    stateFunction = runState;
+  } else {
+    // blink status led
+    if(millis() - ledBlinkTimer > (power == LOW? 100 : 500)) {
+      if(ledStatus == LOW) {
+        ledStatus = HIGH;
+      } else {
+        ledStatus = LOW;
+      }
+  
+      digitalWrite(POWER_LED_PIN, ledStatus);
+      ledBlinkTimer = millis();
+    }
+  }
+
+  if(millis() - wakeUpTime > 5000) {
+    Serial.println("Go to sleep");
+    delay(1000);
+    sleepNow();
+  }
+}
+
+void runState() {
+  // check power button
+  static char oldPower = HIGH;
+  int power = digitalRead(POWER_SWITCH_PIN);
+
+  static unsigned long powerTimer = 0;
+  if(power != oldPower && power == LOW) {
+    // reset timer
+    powerTimer = millis();
+    oldPower = power;
+  }
+
+  if(power == LOW && millis() - powerTimer > 4000) {
+    // halt!
+    stateFunction = haltState;
+  }
+}
+
+void haltState() {
+  // blink status led
+  if(millis() - ledBlinkTimer > 200) {
+    if(ledStatus == LOW) {
+      ledStatus = HIGH;
+    } else {
+      ledStatus = LOW;
+    }
+
+    digitalWrite(POWER_LED_PIN, ledStatus);
+    ledBlinkTimer = millis();
+  }  
+}
+
 // return true if switch state has changed!
 bool updateSwitch(struct InputSwitch *sw) {
   int newState = digitalRead(sw->pin);
@@ -85,8 +157,6 @@ bool updateSwitch(struct InputSwitch *sw) {
 void pinInterrupt(void) {
   detachInterrupt(0);
 }
-
-unsigned long wakeUpTime = 0;
 
 void sleepNow() {
   // Set sleep enable (SE) bit:
@@ -107,6 +177,7 @@ void sleepNow() {
   sleep_disable();
 
   wakeUpTime = millis();
+  delay(1000);
   Serial.println("Awake!!");
 }
 
@@ -143,6 +214,9 @@ void setup()
   pinMode(volPlusSwitch.pin, INPUT_PULLUP);
   pinMode(volMinusSwitch.pin, INPUT_PULLUP);
 
+  // switch to startup state
+  stateFunction = startupState;
+
   // turn led on
   ledStatus = HIGH;
   ledBlinkTimer = millis();
@@ -166,10 +240,12 @@ void scanInput() {
   }
 
   /* shut down!!! */
-  if(digitalRead(POWER_SWITCH_PIN) == LOW)
+  if(digitalRead(POWER_SWITCH_PIN) == LOW) {
+    Serial.println("Request shutdown");
     joystickStatus.powerDownRequest = 1;
-  else
+  } else {
     joystickStatus.powerDownRequest = 0;
+  }
 
   // volume
   if(updateSwitch(&volPlusSwitch) && volPlusSwitch.state == LOW) {
@@ -223,6 +299,10 @@ void scanAnalog() {
 }
 
 void loop() {
+  // execute state function
+  stateFunction();
+  return;
+  
   scanAnalog();
   scanInput();
 
