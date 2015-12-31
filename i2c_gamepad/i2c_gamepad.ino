@@ -272,26 +272,27 @@ void scanAnalog() {
 
   // read hat values
   int hatx = analogRead(HAT_PIN_X);
-  if(hatx > 125 && hatx < 275)
+  if(hatx > 300 && hatx < 400)
     joystickStatus.buttons |= (1 << BTN_LEFT);
   else
     joystickStatus.buttons &= ~(1 << BTN_LEFT);
 
-  if(hatx > 325 && hatx < 475)
+  if(hatx > 950)
     joystickStatus.buttons |= (1 << BTN_RIGHT);
   else
     joystickStatus.buttons &= ~(1 << BTN_RIGHT);
   
   int haty = analogRead(HAT_PIN_Y);
-  if(haty > 125 && haty < 275)
+  if(haty > 300 && haty < 400)
     joystickStatus.buttons |= (1 << BTN_UP);
   else
     joystickStatus.buttons &= ~(1 << BTN_UP);
 
-  if(haty > 325 && haty < 475)
+  if(haty > 950)
     joystickStatus.buttons |= (1 << BTN_DOWN);
   else
     joystickStatus.buttons &= ~(1 << BTN_DOWN);
+
   /*
   Serial.print("x : "); Serial.print(hatx);
   Serial.print("y : "); Serial.print(haty);
