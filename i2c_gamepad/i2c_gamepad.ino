@@ -1,6 +1,20 @@
 #include <Wire.h>
 #include <avr/sleep.h>
 
+// ------------------------------------------
+// Configuration
+// ------------------------------------------
+#define I2C_ADDRESS 0x18
+#define SWITCH_DEBOUNCE_TIME 50 // ms
+#define ANALOG_PIN_X 0
+#define ANALOG_PIN_Y 1
+#define HAT_PIN_X 2
+#define HAT_PIN_Y 3
+#define POWER_LED_PIN 5
+#define POWER_SWITCH_PIN 2
+#define POWER_MOSFET_GATE 4
+#define PI_KILL_PIN 3
+
 // switch type definition
 #define BTN_A           0x00
 #define BTN_B           0x01
@@ -23,6 +37,24 @@ struct InputSwitch {
   unsigned char code;
 };
 
+// return true if switch state has changed!
+bool updateSwitch(struct InputSwitch *sw) {
+  int newState = digitalRead(sw->pin);
+
+  if(newState != sw->state && millis() - sw->time > SWITCH_DEBOUNCE_TIME) {
+    // change state!
+    sw->state = newState;
+
+    // record last update
+    sw->time = millis();
+    
+    return true;
+  }
+
+  // else 
+  return false;
+}
+
 // I2C data definition
 struct I2CJoystickStatus {
   uint16_t buttons; // button status
@@ -33,17 +65,6 @@ struct I2CJoystickStatus {
 };
 
 I2CJoystickStatus joystickStatus;
-
-// ------------------------------------------
-// Configuration
-// ------------------------------------------
-
-#define I2C_ADDRESS 0x18
-#define SWITCH_DEBOUNCE_TIME 50 // ms
-#define ANALOG_PIN_X 0
-#define ANALOG_PIN_Y 1
-#define HAT_PIN_X 2
-#define HAT_PIN_Y 3
 
 // the 8 switches 
 InputSwitch switches[] = {
@@ -57,12 +78,12 @@ InputSwitch switches[] = {
   {9, HIGH, 0, BTN_SELECT}
 };
 
-#define POWER_LED_PIN 5
-unsigned long ledBlinkTimer = 0;
-int ledStatus = LOW;
+InputSwitch powerSwitch = {POWER_SWITCH_PIN, HIGH, 0, 0};
+unsigned long powerSwitchPressTime = 0;
+bool powerSwitchHasBeenReleased = true; // a flag used to know if the power switch has been released since last state change
 
-#define POWER_SWITCH_PIN 2
-#define PI_KILL_PIN 3
+unsigned long ledBlinkTimer = 0;
+int powerLedStatus = LOW;
 
 InputSwitch volPlusSwitch = {20, HIGH, 0, BTN_DUMMY};
 InputSwitch volMinusSwitch = {21, HIGH, 0, BTN_DUMMY};
@@ -71,36 +92,49 @@ void (*stateFunction)(void);
 unsigned long wakeUpTime = 0;
 
 void startupState() {
-  // check power button
-  static char oldPower = HIGH;
-  int power = digitalRead(POWER_SWITCH_PIN);
-
-  static unsigned long powerTimer = 0;
-  if(power != oldPower && power == LOW) {
-    // reset timer
-    powerTimer = millis();
-    oldPower = power;
+  // blink led
+  if(millis() - ledBlinkTimer > 500) {
+    powerLedStatus = powerLedStatus == HIGH ? LOW : HIGH;
+    
+    digitalWrite(POWER_LED_PIN, powerLedStatus);
+    ledBlinkTimer = millis();
   }
-
-  if(power == LOW && millis() - powerTimer > 4000) {
-    // change state
-    digitalWrite(POWER_LED_PIN, HIGH);
-    stateFunction = runState;
-  } else {
-    // blink status led
-    if(millis() - ledBlinkTimer > (power == LOW? 100 : 500)) {
-      if(ledStatus == LOW) {
-        ledStatus = HIGH;
-      } else {
-        ledStatus = LOW;
-      }
   
-      digitalWrite(POWER_LED_PIN, ledStatus);
-      ledBlinkTimer = millis();
+  // update power switch
+  if(updateSwitch(&powerSwitch)) {
+    if(powerSwitch.state == LOW) {
+      Serial.println("Pressed");
+      powerSwitchPressTime = millis();
+    } else {
+      powerSwitchHasBeenReleased = true;
     }
   }
 
-  if(millis() - wakeUpTime > 5000) {
+  if(powerSwitch.state == LOW) {
+    // reset sleep timer
+    wakeUpTime = millis();
+
+    // if pressing power for more the 3s, change state
+    if(millis() - powerSwitchPressTime > 3000) {
+      // go to run state
+      stateFunction = runState;
+
+      // reset release flag
+      powerSwitchHasBeenReleased = false;
+    
+      // led is on
+      powerLedStatus = HIGH;
+      digitalWrite(POWER_LED_PIN, powerLedStatus);
+
+      // power the pi
+      digitalWrite(POWER_MOSFET_GATE, LOW);      
+
+      Serial.println("Starting up the pi!");
+    }
+  }
+
+  // if still in this state after 5s, go to sleep
+  if(millis() - wakeUpTime > 5000 && powerSwitch.state == HIGH) {
     Serial.println("Go to sleep");
     delay(1000);
     sleepNow();
@@ -108,49 +142,56 @@ void startupState() {
 }
 
 void runState() {
-  // check power button
-  static char oldPower = HIGH;
-  int power = digitalRead(POWER_SWITCH_PIN);
-
-  static unsigned long powerTimer = 0;
-  if(power != oldPower && power == LOW) {
-    // reset timer
-    powerTimer = millis();
-    oldPower = power;
+  // update power switch
+  if(updateSwitch(&powerSwitch)) {
+    if(powerSwitch.state == LOW) {
+      Serial.println("Pressed");
+      powerSwitchPressTime = millis();
+    } else {
+      powerSwitchHasBeenReleased = true;
+    }
   }
 
-  if(power == LOW && millis() - powerTimer > 4000) {
-    // halt!
+  // if the switch has been released since we are in this state
+  // if it's pressed and pressed for more than 4s, then change state
+  if(powerSwitchHasBeenReleased && powerSwitch.state == LOW && millis() - powerSwitchPressTime > 4000) {
+    // go to halt state
     stateFunction = haltState;
+
+    // reset power switch timer to highest value
+    powerSwitchHasBeenReleased = false;
+
+    // stoping the pi
+    joystickStatus.powerDownRequest = 1;
+
+    Serial.println("Stoping the pi!");
   }
+
+  // update switch etc
+  scanAnalog();
+  scanInput();
 }
 
 void haltState() {
   // blink status led
-  if(millis() - ledBlinkTimer > 200) {
-    if(ledStatus == LOW) {
-      ledStatus = HIGH;
+  if(millis() - ledBlinkTimer > 100) {
+    if(powerLedStatus == LOW) {
+      powerLedStatus = HIGH;
     } else {
-      ledStatus = LOW;
+      powerLedStatus = LOW;
     }
 
-    digitalWrite(POWER_LED_PIN, ledStatus);
+    digitalWrite(POWER_LED_PIN, powerLedStatus);
     ledBlinkTimer = millis();
   }  
-}
 
-// return true if switch state has changed!
-bool updateSwitch(struct InputSwitch *sw) {
-  int newState = digitalRead(sw->pin);
+  // wait for pi kill signal
+  if(digitalRead(PI_KILL_PIN) == LOW) {
+    // shut down the power
+    digitalWrite(POWER_MOSFET_GATE, HIGH);
 
-  if(newState != sw->state && millis() - sw->time > SWITCH_DEBOUNCE_TIME) {
-    // change state!
-    sw->state = newState;
-
-    // record last update
-    sw->time = millis();
-    
-    return true;
+    // go back to start state
+    stateFunction = startupState;
   }
 }
 
@@ -214,13 +255,15 @@ void setup()
   pinMode(volPlusSwitch.pin, INPUT_PULLUP);
   pinMode(volMinusSwitch.pin, INPUT_PULLUP);
 
+  pinMode(POWER_MOSFET_GATE, OUTPUT);
+
   // switch to startup state
   stateFunction = startupState;
 
   // turn led on
-  ledStatus = HIGH;
+  powerLedStatus = HIGH;
   ledBlinkTimer = millis();
-  digitalWrite(POWER_LED_PIN, ledStatus);
+  digitalWrite(POWER_LED_PIN, powerLedStatus);
 }
 
 void scanInput() {
@@ -237,14 +280,6 @@ void scanInput() {
   if(joystickStatus.buttons != oldButtons) {
     Serial.println(joystickStatus.buttons);
     oldButtons = joystickStatus.buttons;
-  }
-
-  /* shut down!!! */
-  if(digitalRead(POWER_SWITCH_PIN) == LOW) {
-    Serial.println("Request shutdown");
-    joystickStatus.powerDownRequest = 1;
-  } else {
-    joystickStatus.powerDownRequest = 0;
   }
 
   // volume
@@ -302,36 +337,6 @@ void scanAnalog() {
 void loop() {
   // execute state function
   stateFunction();
-  return;
-  
-  scanAnalog();
-  scanInput();
-
-  // test sleep
-  /*
-  if(millis() - wakeUpTime > 5000) {
-    Serial.println("Go to sleep");
-    sleepNow();
-  }
-  */
-
-  if(digitalRead(PI_KILL_PIN) == LOW) {
-    // blink status led
-    if(millis() - ledBlinkTimer > 100) {
-      if(ledStatus == LOW) {
-        ledStatus = HIGH;
-      } else {
-        ledStatus = LOW;
-      }
-
-      digitalWrite(POWER_LED_PIN, ledStatus);
-      ledBlinkTimer = millis();
-    }
-  } else {
-    ledStatus = HIGH;
-    digitalWrite(POWER_LED_PIN, ledStatus);
-  }
-
   delay(10);
 }
 
