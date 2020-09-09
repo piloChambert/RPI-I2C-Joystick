@@ -2,6 +2,13 @@
 #include <avr/sleep.h>
 
 // ------------------------------------------
+// Options
+// ------------------------------------------
+#define USE_VOLUME_BUTTON 0
+#define USE_ANALOG_HAT 0 // USE_VOLUME_BUTTON should be 0 in order to use USE_ANALOG_HAT = 0
+#define USE_POWER_FUNCTION 0
+
+// ------------------------------------------
 // Configuration
 // ------------------------------------------
 #define I2C_ADDRESS 0x18
@@ -37,6 +44,29 @@ struct InputSwitch {
   unsigned char code;
 };
 
+// the 8 switches 
+InputSwitch switches[] = {
+  {13, HIGH, 0, BTN_A},
+  {12, HIGH, 0, BTN_B},
+  {11, HIGH, 0, BTN_X},
+  {10, HIGH, 0, BTN_Y},
+  {7, HIGH, 0, BTN_LT},
+  {6, HIGH, 0, BTN_RT},
+  {8, HIGH, 0, BTN_START},
+  {9, HIGH, 0, BTN_SELECT},
+#if USE_ANALOG_HAT == 0
+  {20, HIGH, 0, BTN_UP},
+  {21, HIGH, 0, BTN_DOWN},
+  {16, HIGH, 0, BTN_LEFT},
+  {17, HIGH, 0, BTN_RIGHT},
+#endif
+};
+
+// force analog hat if using volume button
+#if USE_VOLUME_BUTTON == 1
+#define USE_ANALOG_HAT 1
+#endif
+
 // return true if switch state has changed!
 bool updateSwitch(struct InputSwitch *sw) {
   int newState = digitalRead(sw->pin);
@@ -66,18 +96,6 @@ struct I2CJoystickStatus {
 
 I2CJoystickStatus joystickStatus;
 
-// the 8 switches 
-InputSwitch switches[] = {
-  {13, HIGH, 0, BTN_A},
-  {12, HIGH, 0, BTN_B},
-  {11, HIGH, 0, BTN_X},
-  {10, HIGH, 0, BTN_Y},
-  {7, HIGH, 0, BTN_LT},
-  {6, HIGH, 0, BTN_RT},
-  {8, HIGH, 0, BTN_START},
-  {9, HIGH, 0, BTN_SELECT}
-};
-
 InputSwitch powerSwitch = {POWER_SWITCH_PIN, HIGH, 0, 0};
 unsigned long powerSwitchPressTime = 0;
 bool powerSwitchHasBeenReleased = true; // a flag used to know if the power switch has been released since last state change
@@ -85,8 +103,10 @@ bool powerSwitchHasBeenReleased = true; // a flag used to know if the power swit
 unsigned long ledBlinkTimer = 0;
 int powerLedStatus = LOW;
 
+#if USE_VOLUME_BUTTON == 1
 InputSwitch volPlusSwitch = {20, HIGH, 0, BTN_DUMMY};
 InputSwitch volMinusSwitch = {21, HIGH, 0, BTN_DUMMY};
+#endif
 
 void (*stateFunction)(void);
 unsigned long wakeUpTime = 0;
@@ -142,6 +162,7 @@ void startupState() {
 }
 
 void runState() {
+#if USE_POWER_FUNCTION == 1
   // update power switch
   if(updateSwitch(&powerSwitch)) {
     if(powerSwitch.state == LOW) {
@@ -166,6 +187,7 @@ void runState() {
 
     Serial.println("Stoping the pi!");
   }
+#endif
 
   // update switch etc
   scanAnalog();
@@ -252,13 +274,19 @@ void setup()
   pinMode(POWER_SWITCH_PIN, INPUT_PULLUP);
   pinMode(PI_KILL_PIN, INPUT_PULLUP);
 
+#if USE_VOLUME_BUTTON == 1
   pinMode(volPlusSwitch.pin, INPUT_PULLUP);
   pinMode(volMinusSwitch.pin, INPUT_PULLUP);
+#endif
 
   pinMode(POWER_MOSFET_GATE, OUTPUT);
 
   // switch to startup state
+#if USE_POWER_FUNCTION == 1
   stateFunction = startupState;
+#else
+  stateFunction = runState;
+#endif
 
   // turn led on
   powerLedStatus = HIGH;
@@ -282,6 +310,7 @@ void scanInput() {
     oldButtons = joystickStatus.buttons;
   }
 
+#if USE_VOLUME_BUTTON == 1
   // volume
   if(updateSwitch(&volPlusSwitch) && volPlusSwitch.state == LOW) {
     joystickStatus.audioVolume = min(joystickStatus.audioVolume + 5, 100); 
@@ -290,6 +319,7 @@ void scanInput() {
   if(updateSwitch(&volMinusSwitch) && volMinusSwitch.state == LOW) {
     joystickStatus.audioVolume = max(joystickStatus.audioVolume - 5, 0); 
   }
+#endif
 }
 
 void scanAnalog() {
@@ -306,6 +336,7 @@ void scanAnalog() {
   joystickStatus.axis1 = y;
 
   // read hat values
+#if USE_ANALOG_HAT == 1
   int hatx = analogRead(HAT_PIN_X);
   if(hatx > 300 && hatx < 400)
     joystickStatus.buttons |= (1 << BTN_LEFT);
@@ -332,6 +363,7 @@ void scanAnalog() {
   Serial.print("x : "); Serial.print(hatx);
   Serial.print("y : "); Serial.print(haty);
   Serial.println("");*/
+#endif
 }
 
 void loop() {
