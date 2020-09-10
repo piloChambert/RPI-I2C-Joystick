@@ -9,6 +9,8 @@
 #define I2C_GAMEPAD_ADDRESS 0x18
 #define UPDATE_FREQ 5000 // ms (200Hz)
 
+#define USE_ANALOG_DPAD 0 // use ABS_HAT0X and ABS_HAT0Y instead of BTN_DPAD_* events
+
 typedef struct {
   uint16_t buttons; // button status
   uint8_t axis0; // first axis
@@ -29,14 +31,33 @@ int readI2CJoystick(int file, I2CJoystickStatus *status) {
 
 void updateUInputDevice(int UInputFIle, I2CJoystickStatus *newStatus, I2CJoystickStatus *status) {
   // update button event
-  TestBitAndSendKeyEvent(status->buttons, newStatus->buttons, 0, BTN_A);
-  TestBitAndSendKeyEvent(status->buttons, newStatus->buttons, 1, BTN_B);
-  TestBitAndSendKeyEvent(status->buttons, newStatus->buttons, 2, BTN_X);
-  TestBitAndSendKeyEvent(status->buttons, newStatus->buttons, 3, BTN_Y);
-  TestBitAndSendKeyEvent(status->buttons, newStatus->buttons, 4, BTN_TL);
-  TestBitAndSendKeyEvent(status->buttons, newStatus->buttons, 5, BTN_TR);
-  TestBitAndSendKeyEvent(status->buttons, newStatus->buttons, 6, BTN_START);
-  TestBitAndSendKeyEvent(status->buttons, newStatus->buttons, 7, BTN_SELECT);
+  TestBitAndSendKeyEvent(status->buttons, newStatus->buttons, 0x00, BTN_A);
+  TestBitAndSendKeyEvent(status->buttons, newStatus->buttons, 0x01, BTN_B);
+  TestBitAndSendKeyEvent(status->buttons, newStatus->buttons, 0x02, BTN_X);
+  TestBitAndSendKeyEvent(status->buttons, newStatus->buttons, 0x03, BTN_Y);
+  TestBitAndSendKeyEvent(status->buttons, newStatus->buttons, 0x04, BTN_TL);
+  TestBitAndSendKeyEvent(status->buttons, newStatus->buttons, 0x05, BTN_TR);
+  TestBitAndSendKeyEvent(status->buttons, newStatus->buttons, 0x06, BTN_START);
+  TestBitAndSendKeyEvent(status->buttons, newStatus->buttons, 0x07, BTN_SELECT);
+
+#if USE_ANALOG_DPAD == 0
+  TestBitAndSendKeyEvent(status->buttons, newStatus->buttons, 0x08, BTN_DPAD_UP);
+  TestBitAndSendKeyEvent(status->buttons, newStatus->buttons, 0x09, BTN_DPAD_DOWN);
+  TestBitAndSendKeyEvent(status->buttons, newStatus->buttons, 0x0A, BTN_DPAD_LEFT);
+  TestBitAndSendKeyEvent(status->buttons, newStatus->buttons, 0x0B, BTN_DPAD_RIGHT);
+#else
+  // HAT0Y (up/down)
+  if((status->buttons & (1 << 0x08)) != (newStatus->buttons & (1 << 0x08)) || (status->buttons & (1 << 0x09)) != (newStatus->buttons & (1 << 0x09))) {
+    int32_t val = (newValue & (1 << 0x08)) != 0 ? -1 : ((newValue & (1 << 0x09)) != 0 ? 1 : 0);
+    sendInputEvent(UInputFIle, EV_ABS, ABS_HAT0Y, val);  
+  }
+
+  // HAT0X (left/right)
+  if((status->buttons & (1 << 0x0A)) != (newStatus->buttons & (1 << 0x0A)) || (status->buttons & (1 << 0x0B)) != (newStatus->buttons & (1 << 0x0B))) {
+    int32_t val = (newValue & (1 << 0x0A)) != 0 ? -1 : ((newValue & (1 << 0x0B)) != 0 ? 1 : 0);
+    sendInputEvent(UInputFIle, EV_ABS, ABS_HAT0X, val);
+  }
+#endif
 
   // joystick axis 
   if(newStatus->axis0 != status->axis0) {
